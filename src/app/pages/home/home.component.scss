@@ -53,9 +53,6 @@
     font-weight: 500;
     display: block;
   }
-
-
-
 }
 
 .navegacion {
@@ -69,3 +66,38 @@
   }
 
 }
+
+.historia {
+  background-image: url("/assets/svg/rectangule.svg");
+  min-height: 53.5rem;
+  position: relative;
+  top: -8rem;
+
+  &__contenedor {
+    padding: 15rem 0 0 0;
+
+  }
+
+  &__descripcion {
+  }
+
+/*  &::before {
+    content: '';
+    position: absolute;
+    background-color: #1D2025;
+    width: 100%;
+    height: 20rem;
+  }
+
+  &::before {
+    top: -5.2rem;
+    left: 0;
+    transform: rotate(-3deg);
+  }*/
+
+
+
+
+
+}
+
