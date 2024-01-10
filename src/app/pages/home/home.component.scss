@@ -113,6 +113,20 @@
     text-align: center;
   }
 
+  &__button {
+    width: 17.6rem;
+    padding: 1.2rem ;
+    text-transform: uppercase;
+    border: 2px solid #F27E00;
+    background-color: #1D2025;
+    color: #fff;
+    border-radius: .3rem;
+    margin: 5rem auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+  }
+
 
 }
 
