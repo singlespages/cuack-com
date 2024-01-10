@@ -88,6 +88,16 @@
     align-items: center;
     height: 50rem;
     justify-content: space-evenly;
+    position: relative;
+
+    &::before {
+      content: url("/assets/svg/senal.svg");
+      width: 8rem;
+      position: absolute;
+      top: 17rem;
+      left: -1rem;
+
+    }
 
   }
 
@@ -98,6 +108,14 @@
     line-height: 4.5rem;
     width: 79.5rem;
     text-align: center;
+
+    &::before {
+      content: url("/assets/svg/capa.svg");
+      width: 6rem;
+      position: absolute;
+      top: 40rem;
+      left: -10rem;
+    }
   }
 
   &__green {
@@ -111,6 +129,21 @@
     font-weight: 400;
     color: #fff;
     text-align: center;
+
+    &::before {
+      content: url("/assets/svg/capa_2.svg");
+      width: 6rem;
+      position: absolute;
+      top: 44rem;
+      left: 15rem;
+    }
+
+    &::after {
+      content: url("/assets/svg/avion-despegando.svg");
+      width: 4rem;
+      position: absolute;
+      right: 35rem;
+    }
   }
 
   &__button {
