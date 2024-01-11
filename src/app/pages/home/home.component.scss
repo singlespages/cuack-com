@@ -238,7 +238,6 @@
   width: 68rem;
   display: flex;
   flex-direction: column;
-  //justify-content: space-around;
   height: 30rem;
 
   &__descripcion {
@@ -262,5 +261,57 @@
     margin: 3.5rem auto;
     padding: .7rem;
   }
+}
 
+/*Section Rincon*/
+
+.rincon {
+  min-height: 66rem;
+  background-image: url("/assets/img/fondo-3.png");
+  position: relative;
+  top: -10rem;
+  padding: 5rem;
+
+  &__heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  &__subheading {
+    color: #1D2025;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    background-color: #A5CD00;
+    width: 26.8rem;
+    margin: 1.2rem auto;
+  }
+
+  &__grid {
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  &__button {
+    width: 15.3rem;
+    padding: 1.2rem ;
+    text-transform: uppercase;
+    border: 2px solid #F27E00;
+    background-color: #1D2025;
+    color: #fff;
+    border-radius: .3rem;
+    margin: 5rem auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+  }
 }
