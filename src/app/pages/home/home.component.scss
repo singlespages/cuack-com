@@ -401,7 +401,21 @@
 
   &__form {
     align-self: center;
+    position: relative;
+    margin-left: 4rem;
+
+    &::before {
+      content: "";
+      border-left: 2px solid #FFFFFF;
+      width: 0.2rem;
+      height: 41.4rem;
+      color: #FFFFFF;
+      position: absolute;
+      top: -1rem;
+      left: -4rem;
+    }
   }
+
 }
 
 .form {
