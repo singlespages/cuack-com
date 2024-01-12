@@ -7,7 +7,22 @@
   background-repeat: no-repeat;
   background-size: 100%, cover ;
   padding: 3rem 0;
-  background-position: center -1rem;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    background-color: #1D2025;
+    width: 120%;
+    height: 11rem;
+    position: absolute;
+  }
+
+  &:after {
+    transform: rotate(-3deg);
+    top: 70rem;
+  }
 
 
   &__barra {
@@ -79,13 +94,11 @@
 /*Section Nuestra historia*/
 
 .historia {
-  background-image: url("/assets/svg/rectangule.svg");
-  min-height: 53.5rem;
-  position: relative;
-  top: -9.8rem;
+  min-height: 66.5rem;
+  background-color: #1D2025;
 
   &__contenedor {
-    padding: 15rem 0 0 0;
+    padding: 13rem 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,8 +184,6 @@
   background-image: url(/assets/img/fondo-2.png);
   background-size: cover;
   background-position: -17rem;
-  position: relative;
-  top: -10rem;
   padding: 5rem;
 
   &__grid {
@@ -268,8 +279,6 @@
 .rincon {
   min-height: 66rem;
   background-image: url("/assets/img/fondo-3.png");
-  position: relative;
-  top: -10rem;
   padding: 7rem;
 
   &__heading {
@@ -346,15 +355,29 @@
 /*Section contacto*/
 
 .contact {
-  min-height: 71rem;
   background-image: url("/assets/svg/fondo-green.svg");
-  position: relative;
-  top: -18rem;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    background-color: #1D2025;
+    //background-color: #fff;
+    width: 120%;
+    height: 11rem;
+    position: absolute;
+  }
+
+  &:before {
+    transform: rotate(-3deg);
+    top: -7rem;
+    left: -1rem;
+  }
 
   &__container {
-    padding: 8.5rem 0;
+    padding: 10rem 0 1.5rem 0;
   }
 
   &__imagen {
@@ -464,7 +487,13 @@
     margin-top: 5rem;
     margin-left: .5rem;
   }
+}
 
+/*Footer*/
 
-
+.footer {
+  min-height: 62rem;
+  background-image: url("/assets/img/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
