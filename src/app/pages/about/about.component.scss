@@ -131,5 +131,19 @@
     color: #FFFFFF;
     font-weight: 300;
   }
+}
+
+/*Nuestro compromiso */
+
+.compromiso {
+  background-image: url("/assets/svg/fondo-quienes-somos.svg");
+  background-repeat: no-repeat;
+
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
 
 }
