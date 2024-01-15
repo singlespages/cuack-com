@@ -55,15 +55,65 @@
 }
 
 .about {
+  min-height: 80rem;
+  background-color: #1D2025;
+  padding: 8rem 0;
 
-  &__container{
-    min-height: 60rem;
-    background-color: #1D2025;
+  &__container {
+    position: relative;
+  }
+
+  &__home {
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &__home__color {
+    color: #F27E00;
+    font-weight: 600;
   }
 
   &__grid {
+    padding-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+
+  &__heading {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+  }
+
+  &__subtitle {
+    color: #A5CD00;
+    font-weight: 800;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: url("/assets/svg/pisadas-footer.svg");
+      position: absolute;
+      top: 62rem;
+      right: 2rem;
+    }
+
+    &::after {
+      content: url("/assets/svg/pato.svg");
+      position: absolute;
+      top: 49rem;
+      right: -13rem;
+    }
+  }
+
+  &__descripcion {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 300;
   }
 
 }
