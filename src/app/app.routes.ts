@@ -1,15 +1,20 @@
 import { Routes } from '@angular/router';
 import {HomeComponent} from "./pages/home/home.component";
 import {AboutComponent} from "./pages/about/about.component";
+import {MeServicesComponent} from "./pages/me-services/me-services.component";
 
 export const routes: Routes = [
   {
-    path: 'home',
+    path: 'inicio',
     component: HomeComponent
   },
   {
-    path: 'about',
+    path: 'quienes-somos',
     component: AboutComponent
+  },
+  {
+    path: 'nuestros-servicios',
+    component: MeServicesComponent
   },
   {
     path: '',
@@ -18,6 +23,6 @@ export const routes: Routes = [
   {
     path: '**',
     pathMatch: 'full',
-    redirectTo: '/home'
+    redirectTo: '/inicio'
   }
 ];
