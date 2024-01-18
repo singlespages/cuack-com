@@ -73,7 +73,7 @@
 
   }
 }
-
+/*Section solicitudes*/
 .identidades {
   min-height: 70rem;
   background-color: #1D2025;
@@ -131,6 +131,8 @@
     line-height: 2.5rem;
   }
 }
+
+/*Section transformando*/
 
 .transformando {
   padding-top: 10rem;
@@ -250,6 +252,51 @@
     width: 18.8rem;
     margin: 0 auto;
   }
+}
+/*Solicitudes*/
 
+.solicitudes {
+  min-height: 66rem;
+  background-color: #1D2025;
 
+  &__container {
+    padding: 5rem 0;
+  }
+
+  &__heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 4.8rem;
+    text-transform: uppercase;
+  }
+
+  &__subheading {
+    color: #1D2025;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    background-color: #A5CD00;
+    width: 53.3rem;
+    margin: .2rem auto;
+  }
+
+  &__descripcion {
+    padding: 5rem;
+    color: #FFFFFF;
+    text-align: justify;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
