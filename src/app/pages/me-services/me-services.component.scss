@@ -196,8 +196,60 @@
     font-weight: 700;
     line-height: 2.5rem;
   }
+}
+
+.nuestros-servicios {
+  min-height: 66rem;
+  background-image: url(/assets/img/fondo-2.png);
+  background-size: cover;
+  background-position: -47rem;
+  padding: 5rem;
 
 
+  &__heading {
+    color: #1D2025;
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__color {
+    color: #1D2025;
+    font-size: 7.6rem;
+    font-weight: 300;
+    line-height: 7rem;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &__descripcion {
+    padding: 3rem 0;
+    color: #000;
+    text-align: justify;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
+  &__grid {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  &__accion {
+    display: block;
+    border-radius: 3px;
+    border: 2px solid #1D2025;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+    width: 18.8rem;
+    margin: 0 auto;
+  }
 
 
 }
