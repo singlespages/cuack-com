@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './digital-design.component.scss'
 })
 export class DigitalDesignComponent {
+  activeTab = 1;
+
+  changeTab(tabNumber: number) {
+    this.activeTab = tabNumber;
+  }
 
 }
