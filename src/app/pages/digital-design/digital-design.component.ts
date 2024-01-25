@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-digital-design',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './digital-design.component.html',
   styleUrl: './digital-design.component.scss'
 })
