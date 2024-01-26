@@ -1,0 +1,55 @@
+
+/*Section*/
+.identidades {
+
+
+  &__container {
+    position: relative;
+    margin-bottom: 6rem;
+  }
+
+  &__grid {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+
+  &__heading {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    margin-bottom: 5rem;
+  }
+
+  &__subtitle {
+    display: block;
+    color: #FF0031;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+
+  &__descripcion {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 300;
+  }
+}
+
+.servicios {
+  background-image: url("/assets/svg/fondo-quienes-somos-01.svg");
+  min-height: 60rem;
+  padding: 5rem 0;
+
+  &__heading {
+    color: #ffffff;
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+  }
+}
