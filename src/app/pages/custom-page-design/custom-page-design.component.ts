@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {ContactComponent} from "../contact/contact.component";
 import {FooterComponent} from "../footer/footer.component";
 
@@ -13,5 +13,13 @@ import {FooterComponent} from "../footer/footer.component";
   styleUrl: './custom-page-design.component.scss'
 })
 export class CustomPageDesignComponent {
+  @Input() identidades = {
+    title: '',
+    subtitle: '',
+    description: [],
+    image: ''
+  };
+
+
 
 }
