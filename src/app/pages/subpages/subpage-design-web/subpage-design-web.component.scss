@@ -167,3 +167,78 @@
     padding: 1.5rem;
   }
 }
+
+/*Algunos de nuestros trabajos*/
+.trabajos {
+  background-color: #E3E4E6;
+  min-height: 50rem;
+  padding: 5rem 0;
+
+  &__heading {
+    color: #1D2025;
+    font-size: 3.4rem;
+    font-weight: 300;
+    line-height: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+  }
+
+  &__color {
+    color: #1D2025;
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 6rem;
+    text-transform: uppercase;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/*Solicitudes especiales*/
+.especiales {
+  background-color: #1D2025;
+  min-height: 60rem;
+  padding: 6rem 0;
+
+  &__heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+  }
+
+  &__subheading {
+    color: #1D2025;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    background-color: #F27E00;
+    width: 53.3rem;
+    margin: .5rem auto;
+  }
+
+  &__paragraph {
+    color: #FFF;
+    text-align: justify;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    padding: 4rem 24rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
