@@ -4,6 +4,9 @@ import {NgIf, NgSwitchCase} from "@angular/common";
 import {CustomPageDesignComponent} from "../subpages/custom-page-design/custom-page-design.component";
 import {SubpageDesignWebComponent} from "../subpages/subpage-design-web/subpage-design-web.component";
 import {SubPageDesignMarkComponent} from "../subpages/sub-page-design-mark/sub-page-design-mark.component";
+import {
+  SubpageStrategicCommunicationComponent
+} from "../subpages/subpage-strategic-communication/subpage-strategic-communication.component";
 
 @Component({
   selector: 'app-digital-design',
@@ -14,7 +17,8 @@ import {SubPageDesignMarkComponent} from "../subpages/sub-page-design-mark/sub-p
     CustomPageDesignComponent,
     NgIf,
     SubpageDesignWebComponent,
-    SubPageDesignMarkComponent
+    SubPageDesignMarkComponent,
+    SubpageStrategicCommunicationComponent
   ],
   templateUrl: './digital-design.component.html',
   styleUrl: './digital-design.component.scss'

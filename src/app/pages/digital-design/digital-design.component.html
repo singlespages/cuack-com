@@ -18,7 +18,7 @@
         <img src="/assets/img/dogs.png" alt="Dogs de portada">
       </div>
       <div class="header__descripcion">
-        <h1 class="header__heading">Descubre Cómo Podemos<span class="header__green">Ayudarte</span></h1>
+        <h1 class="header__heading">Descubre Cómo Podemos<span class="header__title" [class]="activeTab == 1 ? 'red' : activeTab == 2 ? 'orange' : activeTab == 3 ? 'green' : activeTab == 4 ? 'blue' : ''  ">Ayudarte</span></h1>
       </div>
     </div>
   </div>
@@ -29,21 +29,6 @@
     <div class="identidades__container contenedor">
       <h4 class="identidades__home">Inicio › <span class="identidades__home__color">Nuestros Servicios</span> › <span class="identidades__home__color"> Diseño Digital</span></h4>
     </div>
-    <!--<div class="tabs-container contenedor">
-      <div class="tab" (click)="changeTab(1)" [class.active]="activeTab === 1">
-        <span [style.color]="activeTab === 1 ? '#FF0031' : '#fff'">Diseño Digital</span>
-      </div>
-      <div class="tab" (click)="changeTab(2)" [class.active]="activeTab === 2">
-        <span [style.color]="activeTab === 2 ? '#F27E00' : '#fff'">Diseño y Desarrollo Web </span>
-      </div>
-      <div class="tab" (click)="changeTab(3)" [class.active]="activeTab === 3">
-        <span [style.color]="activeTab === 3 ? '#A5CD00' : '#fff'">Diseño de Marca</span>
-      </div>
-      <div class="tab" (click)="changeTab(4)" [class.active]="activeTab === 4">
-        <span [style.color]="activeTab === 4 ? '#14BCFF' : '#fff'">Comunicación Estratégica</span>
-      </div>
-      <div class="tab-line"></div>
-    </div>-->
 
     <div class="listas contenedor">
       <a class="listas__button" (click)="changeTab(1)" [class.activeOne]="activeTab === 1">Diseño digital</a>
@@ -64,6 +49,9 @@
     </ng-container>
     <ng-container *ngIf="activeTab == 3">
       <app-sub-page-design-mark></app-sub-page-design-mark>
+    </ng-container>
+    <ng-container *ngIf="activeTab == 4">
+      <app-subpage-strategic-communication></app-subpage-strategic-communication>
     </ng-container>
 
   </div>

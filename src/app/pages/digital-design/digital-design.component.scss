@@ -48,10 +48,29 @@
     text-transform: uppercase;
   }
 
-  &__green {
-    display: block;
-    color: #FF0031;
+  &__title {
+
+    &.red {
+      display: block;
+      color: #FF0031;
+    }
+
+    &.orange {
+      display: block;
+      color: #F27E00;
+    }
+
+    &.green {
+      display: block;
+      color: #A5CD00;
+    }
+
+    &.blue {
+      display: block;
+      color: #14BCFF;
+    }
   }
+
 
   &__picture {
     height: 50rem;
