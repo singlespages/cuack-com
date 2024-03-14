@@ -29,7 +29,7 @@
     <div class="identidades__container contenedor">
       <h4 class="identidades__home">Inicio › <span class="identidades__home__color">Nuestros Servicios</span> › <span class="identidades__home__color"> Diseño Digital</span></h4>
     </div>
-    <div class="tabs-container contenedor">
+    <!--<div class="tabs-container contenedor">
       <div class="tab" (click)="changeTab(1)" [class.active]="activeTab === 1">
         <span [style.color]="activeTab === 1 ? '#FF0031' : '#fff'">Diseño Digital</span>
       </div>
@@ -43,6 +43,13 @@
         <span [style.color]="activeTab === 4 ? '#14BCFF' : '#fff'">Comunicación Estratégica</span>
       </div>
       <div class="tab-line"></div>
+    </div>-->
+
+    <div class="listas contenedor">
+      <a class="listas__button" (click)="changeTab(1)" [class.activeOne]="activeTab === 1">Diseño digital</a>
+      <a class="listas__button" (click)="changeTab(2)" [class.activeTwo]="activeTab === 2">Diseño y Desarrollo Web</a>
+      <a class="listas__button" (click)="changeTab(3)" [class.activeThree]="activeTab === 3">Diseño de Marca</a>
+      <a class="listas__button" (click)="changeTab(4)" [class.activeFour]="activeTab === 4">Comunicación Estratégica</a>
     </div>
 
     <ng-container *ngIf="activeTab == 1">

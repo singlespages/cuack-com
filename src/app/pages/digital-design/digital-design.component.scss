@@ -209,3 +209,47 @@
     }
   }
 }
+
+.listas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    padding: 1.5rem 2rem;
+    width: 33rem;
+    background-color: transparent;
+    border-bottom: 3px solid #4E4E4E;
+    color: #FFFFFF;
+    font-weight: 500;
+    display: block;
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    &.activeOne {
+      border-bottom: 3px solid #FF0031; /* Color de la línea al pasar el ratón */
+      color: #FF0031;
+      font-weight: 500;
+    }
+
+    &.activeTwo {
+      border-bottom: 3px solid #F27E00; /* Color de la línea al pasar el ratón */
+      color: #F27E00;
+      font-weight: 500;
+    }
+
+    &.activeThree {
+      border-bottom: 3px solid #A5CD00; /* Color de la línea al pasar el ratón */
+      color: #A5CD00;
+      font-weight: 500;
+    }
+
+    &.activeFour {
+      border-bottom: 3px solid #14BCFF; /* Color de la línea al pasar el ratón */
+      color: #14BCFF;
+      font-weight: 500;
+    }
+  }
+}
