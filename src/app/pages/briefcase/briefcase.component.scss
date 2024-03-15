@@ -175,3 +175,35 @@
     margin: 0;
   }
 }
+
+/*Algunos de nuestros publcidiad*/
+.publicidad {
+  min-height: 66rem;
+  background-image: url(/assets/img/fondo-2.png);
+  background-size: cover;
+  background-position: -12rem;
+  padding: 5rem;
+
+  &__heading {
+    color: #1D2025;
+    font-size: 3.4rem;
+    font-weight: 300;
+    line-height: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+  }
+
+  &__color {
+    color: #1D2025;
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 6rem;
+    text-transform: uppercase;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
