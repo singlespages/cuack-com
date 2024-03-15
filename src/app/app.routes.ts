@@ -4,6 +4,8 @@ import {AboutComponent} from "./pages/about/about.component";
 import {MeServicesComponent} from "./pages/me-services/me-services.component";
 import {DigitalDesignComponent} from "./pages/digital-design/digital-design.component";
 import {SubpageDesignWebComponent} from "./pages/subpages/subpage-design-web/subpage-design-web.component";
+import {BriefcaseComponent} from "./pages/briefcase/briefcase.component";
+import {BlogComponent} from "./pages/blog/blog.component";
 
 export const routes: Routes = [
   {
@@ -25,6 +27,14 @@ export const routes: Routes = [
   {
     path: 'diseno-web',
     component: SubpageDesignWebComponent
+  },
+  {
+    path: 'portafolio',
+    component: BriefcaseComponent
+  },
+  {
+    path: 'blog',
+    component: BlogComponent
   },
   {
     path: '',

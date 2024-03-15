@@ -1,0 +1,177 @@
+.header {
+  min-height: 65rem;
+  background-image: linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%), url("/assets/img/header-bg-portafolio.png");
+  background-repeat: no-repeat;
+  background-size:  100%, cover ;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -6.2rem;
+
+  &::after {
+    content: '';
+    background-color: #1D2025;
+    //background-color: #275cb5;
+    width: 120%;
+    height: 13rem;
+    position: absolute;
+  }
+
+  &:after {
+    transform: rotate(3deg);
+    top: 59rem;
+    left: -.5rem;
+  }
+
+
+  &__contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__heading {
+    color: #FFF;
+    text-align: right;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 85px; /* 106.25% */
+    text-transform: uppercase;
+  }
+
+  &__green {
+    display: block;
+    color: #A5CD00;
+  }
+
+  &__picture {
+    height: 50rem;
+    width: 86rem;
+    object-fit: cover;
+    margin: 0 0 0 -8.6rem;
+  }
+}
+
+/*Navegacion*/
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+
+  &__link {
+
+  }
+}
+
+/*Section explora nuestro trabajo*/
+.trabajos {
+  min-height: 70rem;
+  background-color: #1D2025;
+
+  &__container {
+    position: relative;
+  }
+
+
+  &__home {
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &__home__color {
+    color: #F27E00;
+    font-weight: 600;
+  }
+
+  &__paragraph {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 300;
+    text-align: center;
+    //margin-bottom: 8rem;
+  }
+
+  &__grid {
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2.5rem;
+    align-items: center;
+
+    &--fame {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      padding-top: 8rem;
+    }
+  }
+
+  &__content {
+
+    &--fame {
+      order: 2;
+    }
+
+  }
+
+  &__heading {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: #A5CD00;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+
+  &__descripcion {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: #ABABAB;
+    font-weight: 300;
+  }
+
+  &__color {
+    color: #A5CD00;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+  }
+
+  &__content__title {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: #A5CD00;
+  }
+
+  &__content__subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+
+  &__brand {
+    display: block;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin: 0;
+  }
+}
