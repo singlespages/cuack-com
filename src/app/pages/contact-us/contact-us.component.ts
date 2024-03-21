@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RouterLink} from "@angular/router";
+import {RouterLink, RouterLinkActive} from "@angular/router";
 import {ContactComponent} from "../contact/contact.component";
 import {FooterComponent} from "../footer/footer.component";
 
@@ -9,7 +9,8 @@ import {FooterComponent} from "../footer/footer.component";
   imports: [
     RouterLink,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    RouterLinkActive
   ],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss'

@@ -63,10 +63,14 @@
 .navegacion {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 2rem;
 
   &__link {
+
+    &.active {
+      border-bottom: 4px solid #F27E00;
+      padding-bottom: 2rem;
+    }
 
   }
 }

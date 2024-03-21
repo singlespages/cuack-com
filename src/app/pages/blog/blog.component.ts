@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RouterLink} from "@angular/router";
+import {RouterLink, RouterLinkActive} from "@angular/router";
 import {FooterComponent} from "../footer/footer.component";
 
 @Component({
@@ -7,7 +7,8 @@ import {FooterComponent} from "../footer/footer.component";
   standalone: true,
     imports: [
         RouterLink,
-        FooterComponent
+        FooterComponent,
+        RouterLinkActive
     ],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.scss'
