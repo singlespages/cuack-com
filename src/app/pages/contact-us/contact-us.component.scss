@@ -1,0 +1,118 @@
+.header {
+  min-height: 65rem;
+  background-image: linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%), url("/assets/img/contactenos-bg-header.png");
+  background-repeat: no-repeat;
+  background-size:  100%, 175rem;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -6.2rem;
+
+  &::after {
+    content: '';
+    background-color: #1D2025;
+    width: 120%;
+    height: 13rem;
+    position: absolute;
+  }
+
+  &:after {
+    transform: rotate(3deg);
+    top: 59rem;
+    left: -.5rem;
+  }
+
+
+  &__contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  &__barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__heading {
+    color: #FFF;
+    text-align: right;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 85px; /* 106.25% */
+    text-transform: uppercase;
+  }
+
+  &__green {
+    display: block;
+    color: #A5CD00;
+  }
+
+  &__picture {
+    height: 50rem;
+    width: 86rem;
+    object-fit: cover;
+    margin: 0 0 0 -8.6rem;
+  }
+}
+
+/*Navegacion*/
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+
+  &__link {
+
+  }
+}
+
+/*Conectate*/
+.conectate {
+  min-height: 25rem;
+  background-color: #1D2025;
+
+  &__container {
+    position: relative;
+  }
+
+  &__home {
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &__home__color {
+    color: #F27E00;
+    font-weight: 600;
+  }
+
+  &__paragraph {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__heading {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: #A5CD00;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+
+
+}
