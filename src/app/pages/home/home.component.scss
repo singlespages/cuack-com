@@ -76,6 +76,13 @@
     font-size: 1.5rem;
     font-weight: 500;
     display: block;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: #F27E00;
+      color: #1D2025;
+    }
   }
 }
 
@@ -226,6 +233,13 @@
     font-size: 1.5rem;
     font-weight: 400;
     display: block;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: #F27E00;
+      color: #1D2025;
+    }
   }
 }
 
@@ -323,6 +337,13 @@
     width: 15rem;
     margin: 3.5rem auto;
     padding: .7rem;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: #1D2025;
+      color: #ffffff;
+    }
   }
 }
 
@@ -374,6 +395,14 @@
     font-size: 1.5rem;
     font-weight: 500;
     display: block;
+
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: #F27E00;
+      color: #1D2025;
+    }
   }
 
   &__backheading {

@@ -29,7 +29,7 @@
       <div class="header__descripcion">
         <h1 class="header__heading">Diseñando un mundo mejor,</h1>
         <h2 class="header__subheading">Un proyecto a la vez</h2>
-        <button class="header__button"> Contáctanos</button>
+        <button (click)="navigateTo('/contacto')"  class="header__button" routerLink="/contacto"> Contáctanos</button>
       </div>
 
     </div>
@@ -44,7 +44,7 @@
       <h3 class="historia__heading">Nuestra Historia: <span class="historia__green">Cuackcolombia</span>, Más que una Agencia de Publicidad.</h3>
     </div>
     <p class="historia__descripcion">En Cuackcolombia, somos una marca colombiana con una pasión inquebrantable por la publicidad y el diseño gráfico. Nacimos de la necesidad de ofrecer a las empresas un distintivo que supere todas las expectativas, sin importar su tamaño o trayectoria.</p>
-    <button class="historia__button">Saber más</button>
+    <button  (click)="navigateTo('/quienes-somos')" class="historia__button" routerLink="/quienes-somos">Saber más</button>
   </div>
 </section>
 
@@ -60,7 +60,7 @@
       </div>
       <div class="contenido-accion">
         <p class="contenido-accion__descripcion">En Cuackcolombia, ofrecemos una amplia gama de servicios de diseño gráfico y publicidad diseñados para impulsar tu marca y superar tus expectativas. Nuestra pasión por la creatividad y la excelencia nos impulsa a brindar soluciones únicas que se adaptan a tus necesidades comerciales. Estos son algunos de los servicios que ofrecemos:</p>
-        <button class="contenido-accion__button">Leer más</button>
+        <button (click)="navigateTo('/nuestros-servicios')" class="contenido-accion__button" routerLink="/nuestros-servicios">Leer más</button>
       </div>
     </div>
     <div class="servicios__gridimagen">
@@ -100,7 +100,7 @@
     </div>
 
     <div class="rincon__accion">
-      <button class="rincon__button">Saber más</button>
+      <button (click)="navigateTo('/blog')" class="rincon__button" routerLink="/blog">Saber más</button>
     </div>
 
     <h2 class="rincon__backheading">Nuestro Legado de Éxito: <span class="rincon__backsubheading">Clientes que han Confiado en Nosotros</span></h2>
