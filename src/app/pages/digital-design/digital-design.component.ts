@@ -24,6 +24,13 @@ import {
   styleUrl: './digital-design.component.scss'
 })
 export class DigitalDesignComponent {
+  isMenuOpen: boolean = false;
+
+  toggleMenu(event: Event): void {
+    event.preventDefault();
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
   activeTab = 1;
 
   changeTab(tabNumber: number) {

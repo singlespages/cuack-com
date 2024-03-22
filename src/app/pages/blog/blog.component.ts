@@ -14,5 +14,12 @@ import {FooterComponent} from "../footer/footer.component";
   styleUrl: './blog.component.scss'
 })
 export class BlogComponent {
+  isMenuOpen: boolean = false;
+
+  toggleMenu(event: Event): void {
+    event.preventDefault();
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
 
 }

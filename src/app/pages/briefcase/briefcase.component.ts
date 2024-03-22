@@ -14,5 +14,12 @@ import {FooterComponent} from "../footer/footer.component";
   styleUrl: './briefcase.component.scss'
 })
 export class BriefcaseComponent {
+  isMenuOpen: boolean = false;
+
+  toggleMenu(event: Event): void {
+    event.preventDefault();
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
 
 }

@@ -12,5 +12,11 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  isMenuOpen: boolean = false;
+
+  toggleMenu(event: Event): void {
+    event.preventDefault();
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 }

@@ -12,5 +12,11 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
   styleUrl: './me-services.component.scss'
 })
 export class MeServicesComponent {
+  isMenuOpen: boolean = false;
+
+  toggleMenu(event: Event): void {
+    event.preventDefault();
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 }

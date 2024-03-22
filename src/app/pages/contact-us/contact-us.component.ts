@@ -16,5 +16,11 @@ import {FooterComponent} from "../footer/footer.component";
   styleUrl: './contact-us.component.scss'
 })
 export class ContactUsComponent {
+  isMenuOpen: boolean = false;
+
+  toggleMenu(event: Event): void {
+    event.preventDefault();
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 }

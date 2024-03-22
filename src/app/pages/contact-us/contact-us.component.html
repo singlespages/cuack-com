@@ -7,6 +7,13 @@
       <a routerLink="/inicio" class="navegacion__link" routerLinkActive="active">Inicio</a>
       <a routerLink="/quienes-somos" class="navegacion__link" routerLinkActive="active">Quiénes somos</a>
       <a routerLink="/nuestros-servicios" class="navegacion__link" routerLinkActive="active">Nuestros servicios</a>
+      <a class="navegacion__link--dropdown" (click)="toggleMenu($event)"> </a>
+      <div class="navegacion__dropdown-menu" [class.active]="isMenuOpen">
+        <a routerLink="/diseno-digital" class="navegacion__dropdown-item">Diseño Digital</a>
+        <a routerLink="/servicio2" class="navegacion__dropdown-item">Diseño y Desarrollo Web</a>
+        <a routerLink="/servicio3" class="navegacion__dropdown-item">Diseño de Marca</a>
+        <a routerLink="/servicio4" class="navegacion__dropdown-item">Comunicación Estratégica</a>
+      </div>
       <a routerLink="/portafolio" class="navegacion__link" routerLinkActive="active">Portafolio</a>
       <a routerLink="/blog" class="navegacion__link" routerLinkActive="active">Blog</a>
       <a routerLink="/contacto" class="navegacion__link" routerLinkActive="active">Contáctanos</a>

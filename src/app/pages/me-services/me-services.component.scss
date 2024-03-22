@@ -64,11 +64,27 @@
 /*Navegacion*/
 
 .navegacion {
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 2rem;
 
   &__link {
+
+    &--dropdown {
+      cursor: pointer;
+      transform: translateX(50%);
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0.7rem;
+        left: -0.7rem;
+        transform: translateX(-50%);
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #fff;
+      }
+    }
 
     &.active {
       border-bottom: 4px solid #F27E00;
@@ -76,6 +92,38 @@
       font-weight: 700;
     }
 
+  }
+
+  &__dropdown-menu {
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 3rem;
+    left: 28rem;
+    min-height: 15rem;
+    border-radius: .5rem;
+    width: 40%;
+    padding: 2rem;
+    transform: translateX(-50%);
+    &::before {
+      content: '';
+      position: absolute;
+      top: -.8rem; // Posición ajustable según tu diseño
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #fff; // Color de la pirámide
+    }
+    &.active {
+      display: block;
+    }
+  }
+
+  &__dropdown-item { // Corregido el nombre de la clase
+    display: block;
+    margin-bottom: 1rem; // Espacio entre ítems
+    color: #1D2025;
   }
 }
 /*Section solicitudes*/
