@@ -259,11 +259,17 @@
     gap: 2.5rem;
   }
 
+
+
   &__contenido {
     grid-column: 1 / 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+  }
+
+  &__card {
+    //box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   &__gridimagen {
@@ -273,7 +279,50 @@
     gap: 1rem;
   }
 
+  &__contenidos {
+    background-color: #1D2025;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  &__subtitle {
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+
+
+  &__flecha {
+    display: inline-flex;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 20px;
+      background-image: url("/assets/svg/icon-right-arrow-01.svg");
+      background-size: contain;
+      background-position-x: -6.6rem;
+      background-repeat: no-repeat;
+      transition: background-position 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      background-position: 0;
+    }
+  }
+
 }
+
+
 
 .contenido {
 
