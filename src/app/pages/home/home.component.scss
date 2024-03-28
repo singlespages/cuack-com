@@ -480,6 +480,54 @@
     gap: 2.5rem;
   }
 
+  &__marketing {
+    transition: outline ease-in-out .3s;
+    position: relative;
+    padding: .8rem;
+    cursor: pointer;
+
+    &::before {
+      content: ""; /* Agrega un contenido vacío al pseudo-elemento */
+      position: absolute; /* Establece posición absoluta para poder posicionar la línea */
+      top: 0;
+      left: 0;
+      width: 100%; /* Ocupa todo el ancho del contenedor */
+      height: 100%; /* Ocupa todo el alto del contenedor */
+      border: 3px solid transparent; /* Establece un borde transparente */
+      transition: border-color 0.3s ease;
+      padding: 1rem;
+    }
+
+    &:hover::before {
+      border-color: #F27E00;
+    }
+
+  }
+
+  &__flecha {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 11rem;
+      top: -2.3rem;
+      background-image: url("/assets/svg/arrow_right_alt.svg");
+      transform: translateY(-50%);
+      width: 18.0rem;
+      height: 1.8rem;
+      background-size: contain;
+      background-position-x: -16.5rem;
+      background-repeat: no-repeat;
+      transition: background-position 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      background-position: 0;
+    }
+  }
+
+
   &__button {
     width: 15.3rem;
     padding: 1.2rem ;
