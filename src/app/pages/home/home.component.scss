@@ -502,6 +502,10 @@
       border-color: #F27E00;
     }
 
+    &:hover {
+      filter: brightness(1.2);
+    }
+
   }
 
   &__flecha {
