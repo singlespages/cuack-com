@@ -311,7 +311,6 @@
   }
 
   &__accion {
-    display: block;
     border-radius: 3px;
     border: 2px solid #1D2025;
     background-color: transparent;
@@ -320,6 +319,13 @@
     padding: 1rem;
     width: 30%;
     margin: 0 auto;
+    transition: background-color ease-out .2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #1D2025;
+      color: #ffffff;
+    }
   }
 }
 
@@ -384,6 +390,13 @@
     padding: 1rem;
     width: 30%;
     margin: 3rem auto;
+    cursor: pointer;
+    transition: background-color ease-out .2s;
+
+    &:hover {
+      background-color: #F27E00;
+      color: #1D2025;
+    }
   }
 
   &__image {
