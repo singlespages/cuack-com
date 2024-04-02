@@ -253,6 +253,50 @@
   }
 }
 
+/*Nuestros servicios*/
+
+.arrowOne{
+  &::before {background-image: url("/assets/svg/icon-right-arrow-01.svg");}
+}
+
+.arrowTwo{
+  &::before {background-image: url("/assets/svg/icon-right-arrow-02.svg");}
+}
+.arrowThree{
+  &::before {background-image: url("/assets/svg/icon-right-arrow-03.svg");}
+}
+.arrowFour{
+  &::before {background-image: url("/assets/svg/icon-right-arrow-04.svg");}
+}
+
+.backOne {
+  border-radius: 0 0 1rem 1rem;
+  &:hover {
+    background-color: #CF0028;
+  }
+}
+
+.backTwo {
+  border-radius: 0 0 1rem 1rem;
+  &:hover {
+    background-color: #D24E00;
+  }
+}
+
+.backThree {
+  border-radius: 0 0 1rem 1rem;
+  &:hover {
+    background-color: #25604B;
+  }
+}
+
+.backFour {
+  border-radius: 0 0 1rem 1rem;
+  &:hover {
+    background-color: #0456A0;
+  }
+}
+
 .nuestros-servicios {
   min-height: 66rem;
   background-image: url(/assets/img/fondo-2.png);
@@ -294,6 +338,66 @@
     margin-bottom: 6rem;
   }
 
+  &__card {
+    cursor: pointer;
+  }
+
+  &__imagen {
+    transition: filter ease-in-out .2s;
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  &__contenidos {
+    background-color: #1D2025;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 2.5rem;
+    transition: background-color ease-in-out .2s;
+
+    &--spacing {
+      padding: 2rem 2.5rem;
+    }
+  }
+
+  &__spacing {
+    display: block;
+    content: '\A';
+    white-space: pre;
+  }
+
+  &__subtitle {
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__flecha {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 20px;
+      background-size: contain;
+      background-position-x: -6.6rem;
+      background-repeat: no-repeat;
+      transition: background-position 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      background-position: 0;
+    }
+  }
+
+
   &__accion {
     display: block;
     border-radius: 3px;
@@ -304,6 +408,13 @@
     padding: 1rem;
     width: 18.8rem;
     margin: 0 auto;
+    cursor: pointer;
+    transition: background-color ease-out .2s;
+
+    &:hover {
+      background-color: #1D2025;
+      color: #ffffff;
+    }
   }
 }
 /*Solicitudes*/

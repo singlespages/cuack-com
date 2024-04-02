@@ -100,24 +100,48 @@
     </p>
 
     <div class="nuestros-servicios__grid">
-      <div class="nuestros-servicios__image">
-        <img src="/assets/img/nuestro-sorprenderte.png" alt="nuestro-sorprenderte">
+      <div class="nuestros-servicios__card">
+        <div class="nuestros-servicios__imagen">
+          <img src="/assets/img/nuestro-servicio-01.png" alt="Diseño-digital">
+        </div>
+        <div class="nuestros-servicios__contenidos nuestros-servicios__contenidos--spacing backOne">
+          <p class="nuestros-servicios__subtitle">Diseño Digital</p>
+          <a class="nuestros-servicios__flecha arrowOne"></a>
+        </div>
       </div>
 
-      <div class="nuestros-servicios__image">
-        <img src="/assets/img/nuestro-diseno.png" alt="nuestro-diseno">
+      <div class="nuestros-servicios__card">
+        <div class="nuestros-servicios__imagen">
+          <img src="/assets/img/nuestro-servicio-02.png" alt="Diseño-digital">
+        </div>
+        <div class="nuestros-servicios__contenidos backTwo">
+          <p class="nuestros-servicios__subtitle">Diseño y  <span class="nuestros-servicios__spacing"></span> Desarrollo web</p>
+          <a class="nuestros-servicios__flecha arrowTwo"></a>
+        </div>
       </div>
 
-      <div class="nuestros-servicios__image">
-        <img src="/assets/img/nuestro-adoyen.png" alt="nuestro-adoyen">
+      <div class="nuestros-servicios__card">
+        <div class="nuestros-servicios__imagen">
+          <img src="/assets/img/nuestro-servicio-03.png" alt="Diseño-digital">
+        </div>
+        <div class="nuestros-servicios__contenidos backThree">
+          <p class="nuestros-servicios__subtitle">Diseño  <span class="nuestros-servicios__spacing"></span> de Marca</p>
+          <a class="nuestros-servicios__flecha arrowThree"></a>
+        </div>
       </div>
 
-      <div class="nuestros-servicios__image">
-        <img src="/assets/img/nuestro-fame.png" alt="nuestro-fame">
+      <div class="nuestros-servicios__card">
+        <div class="nuestros-servicios__imagen">
+          <img src="/assets/img/nuestro-servicio-04.png" alt="Diseño-digital">
+        </div>
+        <div class="nuestros-servicios__contenidos backFour">
+          <p class="nuestros-servicios__subtitle">Comunicación  <span class="nuestros-servicios__spacing"></span> Estratégica</p>
+          <a class="nuestros-servicios__flecha arrowFour"></a>
+        </div>
       </div>
     </div>
 
-    <button class="nuestros-servicios__accion">Ver portafolio </button>
+    <button (click)="navigateTo('/portafolio')" routerLink="/portafolio" class="nuestros-servicios__accion">Ver portafolio </button>
   </div>
 </section>
 
