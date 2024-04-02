@@ -171,6 +171,181 @@
     }
   }
 
+  &__image {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      filter: blur(0px);
+      transition: filter .5s ease-out;
+    }
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/assets/img/portafolio-1-hover.png');
+      background-size: cover;
+      filter: blur(10px);
+      opacity: 0;
+      transition: opacity .5s ease-out;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      filter: blur(0px);
+    }
+
+    &--fame {
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        filter: blur(0px);
+        transition: filter .5s ease-out;
+      }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/img/portafolio-2-hover.png');
+        background-size: cover;
+        filter: blur(10px);
+        opacity: 0;
+        transition: opacity .5s ease-out;
+      }
+
+      &:hover::after {
+        opacity: 1;
+        filter: blur(0px);
+      }
+    }
+
+    &--hostal {
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        filter: blur(0px);
+        transition: filter .5s ease-out;
+      }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/img/portafolio-3-hover.png');
+        background-size: cover;
+        filter: blur(10px);
+        opacity: 0;
+        transition: opacity .5s ease-out;
+      }
+
+      &:hover::after {
+        opacity: 1;
+        filter: blur(0px);
+      }
+    }
+
+    &--beer {
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        filter: blur(0px);
+        transition: filter .5s ease-out;
+      }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/img/portafolio-4-hover.png');
+        background-size: cover;
+        filter: blur(10px);
+        opacity: 0;
+        transition: opacity .5s ease-out;
+      }
+
+      &:hover::after {
+        opacity: 1;
+        filter: blur(0px);
+      }
+    }
+
+    &--bordo {
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        filter: blur(0px);
+        transition: filter .5s ease-out;
+      }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/img/portafolio-5-hover.png');
+        background-size: cover;
+        filter: blur(10px);
+        opacity: 0;
+        transition: opacity .5s ease-out;
+      }
+
+      &:hover::after {
+        opacity: 1;
+        filter: blur(0px);
+      }
+    }
+
+    &--psico {
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        filter: blur(0px);
+        transition: filter .5s ease-out;
+      }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/img/portafolio-6-hover.png');
+        background-size: cover;
+        filter: blur(10px);
+        opacity: 0;
+        transition: opacity .5s ease-out;
+      }
+
+      &:hover::after {
+        opacity: 1;
+        filter: blur(0px);
+      }
+    }
+
+  }
+
   &__content {
 
     &--fame {
