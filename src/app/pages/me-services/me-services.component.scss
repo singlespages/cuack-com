@@ -271,30 +271,19 @@
 
 .backOne {
   border-radius: 0 0 1rem 1rem;
-  &:hover {
-    background-color: #CF0028;
-  }
+
 }
 
 .backTwo {
   border-radius: 0 0 1rem 1rem;
-  &:hover {
-    background-color: #D24E00;
-  }
 }
 
 .backThree {
   border-radius: 0 0 1rem 1rem;
-  &:hover {
-    background-color: #25604B;
-  }
 }
 
 .backFour {
   border-radius: 0 0 1rem 1rem;
-  &:hover {
-    background-color: #0456A0;
-  }
 }
 
 .nuestros-servicios {
@@ -340,13 +329,38 @@
 
   &__card {
     cursor: pointer;
+
+    &:hover {
+      > .nuestros-servicios__imagen {
+        filter: brightness(1.2);
+      }
+
+      > .backOne {
+        background-color: #CF0028;
+      }
+
+      > .backTwo {
+        background-color: #D24E00;
+      }
+
+      > .backThree {
+        background-color: #25604B;
+      }
+
+      > .backFour {
+        background-color: #0456A0;
+      }
+
+      > .nuestros-servicios__contenidos .nuestros-servicios__flecha::before {
+        background-position: 0;
+      }
+
+    }
+
   }
 
   &__imagen {
     transition: filter ease-in-out .2s;
-    &:hover {
-      filter: brightness(1.2);
-    }
   }
 
   &__contenidos {
