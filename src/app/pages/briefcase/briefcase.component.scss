@@ -177,10 +177,9 @@
 
     &:hover {
       filter: blur(0px);
-      transition: filter .5s ease-out;
     }
 
-    &:hover::after {
+    &::after {
       content: "";
       position: absolute;
       top: 0;
@@ -191,12 +190,12 @@
       background-size: cover;
       filter: blur(10px);
       opacity: 0;
-      transition: opacity .5s ease-out;
     }
 
     &:hover::after {
       opacity: 1;
       filter: blur(0px);
+      transition: opacity .5s ease-in-out;
     }
 
     &--fame {
@@ -205,10 +204,9 @@
 
       &:hover {
         filter: blur(0px);
-        transition: filter .5s ease-out;
       }
 
-      &:hover::after {
+      &::after {
         content: "";
         position: absolute;
         top: 0;
@@ -219,12 +217,12 @@
         background-size: cover;
         filter: blur(10px);
         opacity: 0;
-        transition: opacity .5s ease-out;
       }
 
       &:hover::after {
         opacity: 1;
         filter: blur(0px);
+        transition: opacity .5s ease-in-out;
       }
     }
 
@@ -234,10 +232,9 @@
 
       &:hover {
         filter: blur(0px);
-        transition: filter .5s ease-out;
       }
 
-      &:hover::after {
+      &::after {
         content: "";
         position: absolute;
         top: 0;
@@ -248,12 +245,12 @@
         background-size: cover;
         filter: blur(10px);
         opacity: 0;
-        transition: opacity .5s ease-out;
       }
 
       &:hover::after {
         opacity: 1;
         filter: blur(0px);
+        transition: opacity .5s ease-in-out;
       }
     }
 
@@ -263,10 +260,9 @@
 
       &:hover {
         filter: blur(0px);
-        transition: filter .5s ease-out;
       }
 
-      &:hover::after {
+      &::after {
         content: "";
         position: absolute;
         top: 0;
@@ -277,12 +273,12 @@
         background-size: cover;
         filter: blur(10px);
         opacity: 0;
-        transition: opacity .5s ease-out;
       }
 
       &:hover::after {
         opacity: 1;
         filter: blur(0px);
+        transition: opacity .5s ease-out;
       }
     }
 
@@ -292,10 +288,9 @@
 
       &:hover {
         filter: blur(0px);
-        transition: filter .5s ease-out;
       }
 
-      &:hover::after {
+      &::after {
         content: "";
         position: absolute;
         top: 0;
@@ -306,12 +301,12 @@
         background-size: cover;
         filter: blur(10px);
         opacity: 0;
-        transition: opacity .5s ease-out;
       }
 
       &:hover::after {
         opacity: 1;
         filter: blur(0px);
+        transition: opacity .5s ease-out;
       }
     }
 
@@ -321,10 +316,9 @@
 
       &:hover {
         filter: blur(0px);
-        transition: filter .5s ease-out;
       }
 
-      &:hover::after {
+      &::after {
         content: "";
         position: absolute;
         top: 0;
@@ -335,12 +329,12 @@
         background-size: cover;
         filter: blur(10px);
         opacity: 0;
-        transition: opacity .5s ease-out;
       }
 
       &:hover::after {
         opacity: 1;
         filter: blur(0px);
+        transition: opacity .5s ease-out;
       }
     }
 

@@ -158,7 +158,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    transition: outline ease-in-out .3s;
     position: relative;
     cursor: pointer;
 
@@ -170,7 +169,7 @@
       width: 100%; /* Ocupa todo el ancho del contenedor */
       height: 100%; /* Ocupa todo el alto del contenedor */
       border: 3px solid transparent; /* Establece un borde transparente */
-      transition: border-color 0.3s ease;
+      transition: border-color .4s ease;
       padding: 1rem;
       border-radius: 1rem;
     }
@@ -183,15 +182,18 @@
     &:hover {
       > .descubre__image {
         filter: brightness(2);
+        transition: filter ease-in-out .4s;
       }
 
       > .descubre__content .descubre__content__title {
         background-color: #A5CD00;
         color: #1D2025;
+        transition: background-color ease-in-out .4s, color ease-in-out .4s;
       }
 
       > .descubre__content  .descubre__content__paragrapgh {
         color: #A5CD00;
+        transition: color ease-in-out .4s;
       }
 
       > .descubre__content .descubre__content__label {
@@ -202,6 +204,7 @@
         background-color: #A5CD00;
         color: #1D2025;
         border: none;
+        transition: background-color ease-in-out .4s;
       }
 
     }
