@@ -300,13 +300,18 @@
 .blog-section-contenido {
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Aplicación del box-shadow */
+  cursor: pointer;
 
   &__imagen {
+    position: relative;
+    transition: filter .3s ease-in-out, background-image .3ms ease-in-out;
 
   }
 
+
   &__content {
     padding: 3rem;
+    transition: background-color .3s ease-in-out;
   }
 
   &__paragraph {
@@ -320,6 +325,65 @@
   &__accion {
     font-size: 1.5rem;
     color: #1D2025;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 70%;
+      top: 11%;
+      left: 11.2rem;
+      background-image: url("/assets/svg/arrow_right_short.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  &:hover {
+    > .blog-section-contenido__imagen {
+      filter: brightness(1.6);
+    }
+
+    > .blog-section-contenido__content {
+      background-color: #084D34;
+    }
+
+    > .blog-section-contenido__content .blog-section-contenido__paragraph {
+      color: #ffffff;
+    }
+
+    > .blog-section-contenido__content .blog-section-contenido__accion {
+      color: #ffffff;
+    }
+
+    > .blog-section-contenido__content .blog-section-contenido__accion::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 70%;
+      top: 11%;
+      left: 11.2rem;
+      background-image: url("/assets/svg/arrow_right_short-hover.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    > .blog-section-contenido__imagen:after {
+      content: '';
+      position: absolute;
+      width: 37%;
+      height: 10%;
+      top: 83%;
+      left: 3.2rem;
+      background-image: url("/assets/img/blog-contenido-date.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: background-image .3s ease-in-out
+    }
+
+
   }
 
 }
@@ -377,5 +441,12 @@
     padding: 1rem;
     width: 15%;
     margin: 3rem auto;
+    transition: background-color .3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #F27E00;
+      color: #1D2025;
+    }
   }
 }
