@@ -44,6 +44,12 @@
     }
   }
 
+  &__mobile {
+    @media screen and (min-width: 768px){
+      display: none;
+    }
+  }
+
 
   &__barra {
     display: flex;
