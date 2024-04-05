@@ -33,7 +33,12 @@
 
   &:after {
     transform: rotate(-3deg);
-    top: 70rem;
+    top: 66rem;
+
+    @media screen  and (min-width: 768px){
+      top: 70rem;
+
+    }
   }
 
   &__container {
@@ -214,73 +219,112 @@
 }
 
 /*Section Nuestra historia*/
-
 .historia {
-  min-height: 66.5rem;
+  min-height: 50rem;
   background-color: #1D2025;
 
+  @media screen and (min-width: 768px) {
+    min-height: 66.5rem;
+  }
+
   &__contenedor {
-    padding: 13rem 0 0 0;
+    padding: 4rem 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 50rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
 
+    @media screen and (min-width: 768px){
+      padding: 13rem 0 0 0;
+      justify-content: space-evenly;
+
+    }
+
     &::before {
-      content: url("/assets/svg/senal.svg");
-      width: 8rem;
-      position: absolute;
-      top: 17rem;
-      left: -1rem;
+      @media screen and (min-width: 768px) {
+        content: url("/assets/svg/senal.svg");
+        width: 8rem;
+        position: absolute;
+        top: 17rem;
+        left: -1rem;
+      }
 
     }
 
   }
 
   &__heading {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 800;
+    line-height: 2.5rem;
     color: #fff;
-    line-height: 4.5rem;
-    width: 79.5rem;
+    width: 38.5rem;
     text-align: center;
 
+    @media screen and (min-width: 768px){
+      width: 79.5rem;
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+
     &::before {
-      content: url("/assets/svg/capa.svg");
-      width: 6rem;
-      position: absolute;
-      top: 40rem;
-      left: -10rem;
+      @media screen and (min-width: 768px){
+        content: url("/assets/svg/capa.svg");
+        width: 6rem;
+        position: absolute;
+        top: 40rem;
+        left: -10rem;
+      }
     }
   }
 
   &__green {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 800;
     color: #A5CD00;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      display: unset;
+      font-size: 4rem;
+
+    }
   }
 
   &__descripcion {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: #fff;
     text-align: center;
 
+    @media screen and (min-width: 768px){
+      font-size: 1.7rem;
+
+    }
+
     &::before {
-      content: url("/assets/svg/pisadas.svg");
-      width: 6rem;
-      position: absolute;
-      top: 44rem;
-      left: 17rem;
+      @media screen and (min-width: 768px){
+        content: url("/assets/svg/pisadas.svg");
+        width: 6rem;
+        position: absolute;
+        top: 44rem;
+        left: 17rem;
+      }
     }
 
     &::after {
-      content: url("/assets/svg/avion-despegando.svg");
-      width: 4rem;
+      content: url("/assets/svg/avion-despegando-mobile.svg");
+      width: 2rem;
       position: absolute;
-      right: 35rem;
+      right: 33rem;
+      top: 51%;
+      @media screen and (min-width: 768px){
+        content: url("/assets/svg/avion-despegando.svg");
+        right: 35rem;
+
+      }
     }
   }
 
@@ -298,6 +342,11 @@
     display: block;
     cursor: pointer;
     transition: background-color .2s;
+
+    @media screen and (min-width: 768px){
+      margin: 5rem auto;
+
+    }
 
     &:hover {
       background-color: #F27E00;
@@ -330,7 +379,7 @@
 .backFour {
   border-radius: 0 0 2rem 0;
 }
-
+/*Servicios*/
 .servicios {
   min-height: 66rem;
   background-image: url(/assets/img/fondo-2.png);
@@ -339,16 +388,25 @@
   padding: 5rem;
 
   &__grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    align-items: center;
-    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr;
+      align-items: center;
+      padding: 0 1rem;
+    }
   }
 
   &__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+
+    }
   }
 
   &__contenido {
@@ -357,6 +415,11 @@
 
   &__card {
     cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    @media screen and (min-width: 768px){
+      border-radius: unset;
+    }
 
     &:hover {
       > .servicios__imagen {
@@ -392,10 +455,16 @@
 
   &__gridimagen {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: unset;
+    gap: 2rem;
     border-radius: 2rem;
-    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+    @media screen and (min-width: 768px){
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+
+    }
   }
 
   &__contenidos {
@@ -448,19 +517,27 @@
 .contenido {
 
   &__heading {
-    font-size: 7.6rem;
+    font-size: 5rem;
     font-weight: 800;
     color: #1D2025;
     text-transform: uppercase;
     line-height: 6rem;
     text-align: center;
+    @media screen and (min-width: 768px){
+      font-size: 7.6rem;
+
+    }
   }
 
   &__subtitle {
-    font-size: 7.6rem;
+    font-size: 5rem;
     font-weight: 300;
     color: #1D2025;
     text-transform: uppercase;
+    @media screen and (min-width: 768px){
+      font-size: 7.6rem;
+    }
+
   }
 
   &__subheading {
@@ -471,21 +548,37 @@
     letter-spacing: .6rem;
     background-color: #2C6953;
     text-align: center;
-    width: 36.5rem;
+    width: 32rem;
     line-height: 2.8rem;
-    margin-left: 1.4rem;
+    margin-left: 0;
+    @media screen and (min-width: 768px){
+      width: 36.5rem;
+      margin-left: 1.4rem;
+
+    }
   }
 
   &__logo {
-    width: 100%;
+    display: none;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      display: block;
+
+    }
   }
 
 }
 
 .contenido-accion {
-  width: 74rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 4rem;
+  @media screen and (min-width: 768px){
+    width: 74rem;
+    padding-top: 0;
+
+  }
 
   &__descripcion {
     font-size: 1.7rem;
@@ -526,23 +619,34 @@
   &__heading {
     color: #FFF;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-weight: 800;
-    line-height: 36px;
+    line-height: 3rem;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px){
+      font-size: 3.4rem;
+      line-height: 3.6rem;
+
+    }
   }
 
   &__subheading {
     color: #1D2025;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: 6px;
     text-transform: uppercase;
     background-color: #A5CD00;
-    width: 26.8rem;
     margin: 1.2rem auto;
+    width: 100%;
+    @media screen and (min-width: 768px){
+      font-size: 1.5rem;
+      width: 26.8rem;
+
+    }
   }
 
   &__grid {
@@ -629,21 +733,34 @@
 
   &__backheading {
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 45px;
+    line-height: 3rem;
     text-transform: uppercase;
     margin-top: 10rem;
+    @media screen and (min-width: 768px){
+      font-size: 3.4rem;
+      line-height: 45px;
+
+    }
   }
 
   &__backsubheading {
-    white-space: pre;
     color: #FFF;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    line-height: 45px;
-    letter-spacing: 10px;
+    line-height: 2rem;
+    letter-spacing: 8px;
     text-transform: uppercase;
+    display: block;
+    padding-top: 2rem;
+    @media screen and (min-width: 768px){
+      line-height: 45px;
+      font-size: 2.5rem;
+      white-space: pre;
+      padding-top: 0;
+
+    }
   }
 
   &__backgrid {
