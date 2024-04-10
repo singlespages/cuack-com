@@ -614,7 +614,12 @@
 .rincon {
   min-height: 66rem;
   background-image: url("/assets/img/fondo-3.png");
-  padding: 7rem;
+  padding: 3rem;
+
+  @media screen and (min-width: 768px){
+    padding: 7rem;
+
+  }
 
   &__heading {
     color: #FFF;
@@ -641,7 +646,7 @@
     text-transform: uppercase;
     background-color: #A5CD00;
     margin: 1.2rem auto;
-    width: 100%;
+    width: 70%;
     @media screen and (min-width: 768px){
       font-size: 1.5rem;
       width: 26.8rem;
@@ -650,10 +655,23 @@
   }
 
   &__grid {
-    padding-top: 6rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    display: none;
+    @media screen and (min-width: 768px){
+      padding-top: 6rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+
+    }
+  }
+
+  &__swipper {
+    display: block;
+    padding-top: 3rem;
+    @media screen and (min-width: 768px){
+      display: none;
+      padding-top: 0;
+    }
   }
 
   &__marketing {
@@ -764,11 +782,24 @@
   }
 
   &__backgrid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
-    align-items: center;
-    padding: 5rem 0;
+    display: none;
+    @media screen and (min-width: 768px){
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2rem;
+      align-items: center;
+      padding: 5rem 0;
+    }
+
+    &--swipper {
+      width: inherit;
+      padding-top: 2rem;
+      @media screen and (min-width: 768px){
+        display: none;
+        padding-top: 0;
+      }
+
+    }
   }
 
 }
@@ -792,7 +823,7 @@
     content: '';
     background-color: #1D2025;
     width: 120%;
-    height: 12rem;
+    height: 12.3rem;
     position: absolute;
     @media screen and (min-width: 768px){
       height: 10rem;
@@ -1124,5 +1155,12 @@
 
   &__bold {
     color: #F27E00;
+  }
+}
+
+::ng-deep {
+  .slick-dots li.slick-active button:before {
+    color: #F27E00;
+    opacity: 0.75;
   }
 }

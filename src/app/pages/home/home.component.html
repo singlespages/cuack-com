@@ -132,6 +132,37 @@
       </div>
     </div>
 
+    <div class="rincon__swipper">
+      <ngx-slick-carousel [config]="slideConfig"
+                          (init)="slickInit($event)"
+                          (breakpoint)="breakpoint($event)"
+                          (afterChange)="afterChange($event)"
+                          (beforeChange)="beforeChange($event)"
+                          class="carousel"
+      >
+        <div ngxSlickItem class="slide">
+          <div class="rincon__marketing">
+            <img src="/assets/img/blog-1.png" alt="">
+            <a class="rincon__flecha"></a>
+          </div>
+        </div>
+        <div ngxSlickItem class="slide">
+          <div class="rincon__marketing">
+            <img src="/assets/img/blog-2.png" alt="blog-2">
+            <a class="rincon__flecha"></a>
+          </div>
+        </div>
+        <div ngxSlickItem class="slide">
+          <div class="rincon__marketing">
+            <img src="/assets/img/blog-3.png" alt="blog-3">
+            <a class="rincon__flecha"></a>
+          </div>
+        </div>
+
+      </ngx-slick-carousel>
+
+    </div>
+
     <div class="rincon__accion">
       <button (click)="navigateTo('/blog')" class="rincon__button" routerLink="/blog">Saber más</button>
     </div>
@@ -145,6 +176,31 @@
         <img src="/assets/svg/pequenos-a-bordo-logo.svg" alt="pequenos-a-bordo-logo">
         <img src="/assets/svg/hosta-la-finquita-logo.svg" alt="hostal-la-finquita-log">
         <img src="/assets/svg/adoyen-logo.svg" alt="adoyen-logo">
+    </div>
+    <div class="rincon__backgrid--swipper">
+      <ngx-slick-carousel [config]="slideConfigTwo"
+                          class="carousel"
+      >
+        <div ngxSlickItem class="slide">
+          <img src="/assets/svg/la-carreta-de-connor.svg" alt="la-carreta-de-connor">
+        </div>
+        <div ngxSlickItem class="slide">
+          <img src="/assets/svg/fame-club-logo.svg" alt="fame-club-logo">
+        </div>
+        <div ngxSlickItem class="slide">
+          <img src="/assets/svg/alex-rodriguez.svg" alt="alex-rodriguez">
+        </div>
+        <div ngxSlickItem class="slide">
+          <img src="/assets/svg/pequenos-a-bordo-logo.svg" alt="pequenos-a-bordo-logo">
+
+        </div>
+        <div ngxSlickItem class="slide">
+          <img src="/assets/svg/hosta-la-finquita-logo.svg" alt="hostal-la-finquita-log">
+        </div>
+        <div ngxSlickItem class="slide">
+          <img src="/assets/svg/adoyen-logo.svg" alt="adoyen-logo">
+        </div>
+      </ngx-slick-carousel>
     </div>
   </div>
 </section>
