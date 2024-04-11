@@ -49,6 +49,30 @@
       <a class="listas__button" (click)="changeTab(3)" [class.activeThree]="activeTab === 3">Diseño de Marca</a>
       <a class="listas__button" (click)="changeTab(4)" [class.activeFour]="activeTab === 4">Comunicación Estratégica</a>
     </div>
+    <div class="listas__swipper">
+      <ngx-slick-carousel class="carousel" [config]="slideConfigTwo">
+          <div ngxSlickItem class="slide">
+              <div class="listas--mobile">
+                <a class="listas__button" (click)="changeTab(1)" [class.activeOne]="activeTab === 1">Diseño digital</a>
+              </div>
+          </div>
+          <div ngxSlickItem class="slide">
+            <div class="listas--mobile">
+              <a class="listas__button" (click)="changeTab(2)" [class.activeTwo]="activeTab === 2">Diseño y Desarrollo Web</a>
+            </div>
+          </div>
+          <div ngxSlickItem class="slide">
+            <div class="listas--mobile">
+              <a class="listas__button" (click)="changeTab(3)" [class.activeThree]="activeTab === 3">Diseño de Marca</a>
+            </div>
+          </div>
+          <div ngxSlickItem class="slide">
+            <div class="listas--mobile">
+              <a class="listas__button" (click)="changeTab(4)" [class.activeFour]="activeTab === 4">Comunicación Estratégica</a>
+            </div>
+          </div>
+      </ngx-slick-carousel>
+    </div>
 
     <ng-container *ngIf="activeTab == 1">
       <app-custom-page-design

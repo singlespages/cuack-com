@@ -7,19 +7,21 @@ import {SubPageDesignMarkComponent} from "../subpages/sub-page-design-mark/sub-p
 import {
   SubpageStrategicCommunicationComponent
 } from "../subpages/subpage-strategic-communication/subpage-strategic-communication.component";
+import {SlickCarouselModule} from "ngx-slick-carousel";
 
 @Component({
   selector: 'app-digital-design',
   standalone: true,
-  imports: [
-    RouterLink,
-    NgSwitchCase,
-    CustomPageDesignComponent,
-    NgIf,
-    SubpageDesignWebComponent,
-    SubPageDesignMarkComponent,
-    SubpageStrategicCommunicationComponent
-  ],
+    imports: [
+        RouterLink,
+        NgSwitchCase,
+        CustomPageDesignComponent,
+        NgIf,
+        SubpageDesignWebComponent,
+        SubPageDesignMarkComponent,
+        SubpageStrategicCommunicationComponent,
+        SlickCarouselModule
+    ],
   templateUrl: './digital-design.component.html',
   styleUrl: './digital-design.component.scss'
 })
@@ -36,5 +38,12 @@ export class DigitalDesignComponent {
   changeTab(tabNumber: number) {
     this.activeTab = tabNumber;
   }
+
+  slideConfigTwo = {
+    infinite: false,
+    "slidesToShow": 2,
+    dots: false,
+    arrows: true
+  };
 
 }

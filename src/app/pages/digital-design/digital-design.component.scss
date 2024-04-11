@@ -226,22 +226,48 @@
 }
 
 .listas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+
+  &__swipper {
+    padding: 0 3rem;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+  }
 
   &__button {
-    padding: 1.5rem 2rem;
-    width: 33rem;
+    padding: 1.5rem 0;
+    width: 100%;
     background-color: transparent;
     border-bottom: 3px solid #4E4E4E;
     color: #FFFFFF;
     font-weight: 500;
     display: block;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      padding: 1.5rem 2rem;
+      width: 33rem;
+      font-size: 1.7rem;
+    }
 
     &.activeOne {
       border-bottom: 3px solid #FF0031; /* Color de la línea al pasar el ratón */
