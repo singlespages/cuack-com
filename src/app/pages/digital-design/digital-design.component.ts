@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RouterLink} from "@angular/router";
+import {RouterLink, RouterLinkActive} from "@angular/router";
 import {NgIf, NgSwitchCase} from "@angular/common";
 import {CustomPageDesignComponent} from "../subpages/custom-page-design/custom-page-design.component";
 import {SubpageDesignWebComponent} from "../subpages/subpage-design-web/subpage-design-web.component";
@@ -12,16 +12,17 @@ import {SlickCarouselModule} from "ngx-slick-carousel";
 @Component({
   selector: 'app-digital-design',
   standalone: true,
-    imports: [
-        RouterLink,
-        NgSwitchCase,
-        CustomPageDesignComponent,
-        NgIf,
-        SubpageDesignWebComponent,
-        SubPageDesignMarkComponent,
-        SubpageStrategicCommunicationComponent,
-        SlickCarouselModule
-    ],
+  imports: [
+    RouterLink,
+    NgSwitchCase,
+    CustomPageDesignComponent,
+    NgIf,
+    SubpageDesignWebComponent,
+    SubPageDesignMarkComponent,
+    SubpageStrategicCommunicationComponent,
+    SlickCarouselModule,
+    RouterLinkActive
+  ],
   templateUrl: './digital-design.component.html',
   styleUrl: './digital-design.component.scss'
 })

@@ -1,12 +1,18 @@
 .header {
   min-height: 65rem;
-  background-image: linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%), url("/assets/img/header-bg-portafolio.png");
+  background-image: linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%), url("/assets/img/header-bg-portafolio-mobile.png");
   background-repeat: no-repeat;
-  background-size:  100%, cover ;
+  background-size: cover;
   padding: 3rem 0;
   position: relative;
   overflow: hidden;
   margin-bottom: -6.2rem;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%), url("/assets/img/header-bg-portafolio.png");
+    background-size:  100%, cover;
+
+  }
 
   &::after {
     content: '';
@@ -18,9 +24,32 @@
   }
 
   &:after {
-    transform: rotate(3deg);
+    transform: rotate(-3deg);
     top: 59rem;
     left: -.5rem;
+    @media screen and (min-width: 768px){
+      transform: rotate(3deg);
+      top: 59rem;
+    }
+  }
+
+  &__container {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__mobile {
+    @media screen and (min-width: 768px){
+      display: none;
+    }
+  }
+
+  &__picture__mobile {
+    margin: 0 auto;
+    width: fit-content;
   }
 
 
@@ -46,6 +75,15 @@
     font-weight: 800;
     line-height: 85px; /* 106.25% */
     text-transform: uppercase;
+
+    &--mobile {
+      width: 100%;
+      margin: auto;
+      font-size: 2.8rem;
+      line-height: 3rem;
+      text-align: center;
+      padding-top: 8rem;
+    }
   }
 
   &__green {
@@ -63,66 +101,70 @@
 
 /*Navegacion*/
 .navegacion {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  display: none;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 
-  &__link {
+    &__link {
 
-    &--dropdown {
-      cursor: pointer;
-      transform: translateX(50%);
+      &--dropdown {
+        cursor: pointer;
+        transform: translateX(50%);
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0.7rem;
+          left: -0.7rem;
+          transform: translateX(-50%);
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid #fff;
+        }
+      }
+
+      &.active {
+        border-bottom: 4px solid #F27E00;
+        padding-bottom: 2rem;
+        font-weight: 700;
+      }
+
+    }
+
+    &__dropdown-menu {
+      display: none;
+      background-color: #ffffff;
+      position: absolute;
+      top: 3rem;
+      left: 28rem;
+      min-height: 15rem;
+      border-radius: .5rem;
+      width: 40%;
+      padding: 2rem;
+      transform: translateX(-50%);
       &::before {
         content: '';
         position: absolute;
-        top: 0.7rem;
-        left: -0.7rem;
+        top: -.8rem; // Posición ajustable según tu diseño
+        left: 50%;
         transform: translateX(-50%);
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 6px solid #fff;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff; // Color de la pirámide
+      }
+      &.active {
+        display: block;
       }
     }
 
-    &.active {
-      border-bottom: 4px solid #F27E00;
-      padding-bottom: 2rem;
-      font-weight: 700;
-    }
-
-  }
-
-  &__dropdown-menu {
-    display: none;
-    background-color: #ffffff;
-    position: absolute;
-    top: 3rem;
-    left: 28rem;
-    min-height: 15rem;
-    border-radius: .5rem;
-    width: 40%;
-    padding: 2rem;
-    transform: translateX(-50%);
-    &::before {
-      content: '';
-      position: absolute;
-      top: -.8rem; // Posición ajustable según tu diseño
-      left: 50%;
-      transform: translateX(-50%);
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #fff; // Color de la pirámide
-    }
-    &.active {
+    &__dropdown-item { // Corregido el nombre de la clase
       display: block;
+      margin-bottom: 1rem; // Espacio entre ítems
+      color: #1D2025;
     }
-  }
 
-  &__dropdown-item { // Corregido el nombre de la clase
-    display: block;
-    margin-bottom: 1rem; // Espacio entre ítems
-    color: #1D2025;
   }
 }
 
@@ -130,9 +172,14 @@
 .trabajos {
   min-height: 70rem;
   background-color: #1D2025;
+  padding-bottom: 8rem;
 
   &__container {
     position: relative;
+    padding: 0 3rem;
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
   }
 
 
@@ -147,7 +194,8 @@
     font-weight: 600;
   }
 
-  &__paragraph {
+
+   &__paragraph {
     font-size: 1.7rem;
     line-height: 2.5rem;
     color: #FFFFFF;
@@ -158,17 +206,27 @@
   &__grid {
     padding-top: 8rem;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
     gap: 2.5rem;
     align-items: center;
 
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 2fr;
+    }
+
     &--fame {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr;
       gap: 2.5rem;
       align-items: center;
       padding-top: 8rem;
+
+      @media screen and (min-width: 768px) {
+        grid-template-columns: 2fr 1fr;
+      }
     }
+
+
   }
 
   &__image {
@@ -341,6 +399,12 @@
   }
 
   &__content {
+    order: 2;
+
+    @media screen and (min-width: 768px) {
+      order: unset;
+
+    }
 
     &--fame {
       order: 2;
@@ -350,11 +414,19 @@
 
   &__heading {
     color: #FFFFFF;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    line-height: 4.5rem;
+    line-height: 3rem;
     margin-bottom: 5rem;
     text-align: center;
+    padding-top: 2rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 4rem;
+      line-height: 4.5rem;
+      padding-top: 0;
+
+    }
   }
 
   &__subtitle {
