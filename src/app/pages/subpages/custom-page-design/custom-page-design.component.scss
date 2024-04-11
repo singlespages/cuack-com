@@ -221,25 +221,48 @@
 
   &__heading {
     color: #1D2025;
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 6rem;
+    line-height: 1rem;
     text-transform: uppercase;
     margin-bottom: 4rem;
+    @media screen and (min-width: 768px) {
+      font-size: 3.4rem;
+      line-height: 6rem;
+
+    }
   }
 
   &__color {
     color: #1D2025;
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 6rem;
     text-transform: uppercase;
+    display: block;
+    @media screen and (min-width: 768px) {
+      font-size: 3.4rem;
+      display: unset;
+
+    }
+  }
+
+  &__container {
+    padding: 0 2rem;
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-columns: unset;
     gap: 1.5rem;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
   }
 }
 
@@ -251,23 +274,34 @@
   &__heading {
     color: #FFF;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-weight: 800;
-    line-height: 3.6rem;
+    line-height: 3rem;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      font-size: 3.4rem;
+      line-height: 3.6rem;
+    }
   }
 
   &__subheading {
     color: #1D2025;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 2.8rem;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     background-color: #FF0031;
-    width: 53.3rem;
+    width: 100%;
     margin: .5rem auto;
+    @media screen and (min-width: 768px) {
+      font-size: 1.5rem;
+      width: 53.3rem;
+      line-height: 2.8rem;
+      letter-spacing: 6px;
+
+    }
   }
 
   &__paragraph {
@@ -276,12 +310,23 @@
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 2.5rem;
-    padding: 4rem 24rem;
+    padding: 4rem 3rem;
+    @media screen and (min-width: 768px) {
+      padding: 4rem 24rem;
+
+    }
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-columns: unset;
     gap: 1.5rem;
+    padding: 0 2rem;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0;
+
+    }
   }
 }
