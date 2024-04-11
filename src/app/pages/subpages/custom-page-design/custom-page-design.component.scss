@@ -6,22 +6,37 @@
   &__container {
     position: relative;
     margin-bottom: 6rem;
+    padding: 0 2rem;
+    @media screen and (min-width: 768px){
+      padding: 0;
+
+    }
   }
 
   &__grid {
     padding-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-columns: unset;
     gap: 5rem;
     align-items: center;
+    @media screen and (min-width: 768px){
+      grid-template-columns: repeat(2, 1fr);
+
+    }
   }
 
   &__heading {
     color: #FFFFFF;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    line-height: 4.5rem;
+    line-height: 3rem;
     margin-bottom: 5rem;
+    @media screen and (min-width: 768px){
+      font-size: 4rem;
+      line-height: 4.5rem;
+
+    }
   }
 
   &__subtitle {
@@ -53,17 +68,24 @@
   &__heading {
     color: #ffffff;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 3.6rem;
     text-transform: uppercase;
+    @media screen and (min-width: 768px){
+      font-size: 3.4rem;
+    }
   }
 
   &__grid {
-    padding-top: 6rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
+    grid-template-columns: 1fr;
+    padding: 5rem 2rem;
+    @media screen and (min-width: 768px){
+      padding-top: 6rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__card {
@@ -109,15 +131,25 @@
   background-image: url("/assets/img/trabajamos-01.png");
   background-repeat: no-repeat;
   min-height: 50.5rem;
-  padding: 10rem 0;
+  padding: 5rem 2rem;
+  @media screen and (min-width: 768px) {
+    padding: 10rem 0;
+
+  }
 
   &__heading {
     color: #FFF;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 3.6rem;
     text-transform: uppercase;
+    margin-bottom: .5rem;
+    @media screen and (min-width: 768px) {
+      font-size: 3.4rem;
+      margin-bottom: 0;
+
+    }
   }
 
   &__subheading {
@@ -126,18 +158,29 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2.8rem;
-    letter-spacing: 6px;
+    letter-spacing: 0;
     text-transform: uppercase;
     background-color: #FF0031;
-    width: 47.8rem;
-    margin: .5rem auto;
+    width: 95%;
+    margin: 2.5rem auto;
+    @media screen and (min-width: 768px) {
+      letter-spacing: 6px;
+      width: 47.8rem;
+      margin: .5rem auto;
+
+    }
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-columns: unset;
     gap: 1.5rem;
-    padding-top: 6rem;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      padding-top: 6rem;
+
+    }
   }
 
   &__contenido {
@@ -151,9 +194,14 @@
     margin: 0;
     padding: 2rem;
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     font-weight: 500;
     line-height: 2.3rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.2rem;
+
+    }
   }
 
   &__paragraph {
