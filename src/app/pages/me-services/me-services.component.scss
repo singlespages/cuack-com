@@ -349,7 +349,6 @@
 
 .backOne {
   border-radius: 0 0 1rem 1rem;
-
 }
 
 .backTwo {
@@ -369,25 +368,39 @@
   background-image: url(/assets/img/fondo-2.png);
   background-size: cover;
   background-position: -47rem;
-  padding: 5rem;
+  padding: 3rem;
+
+  @media screen and (min-width: 768px){
+    padding: 5rem;
+
+  }
 
 
   &__heading {
     color: #1D2025;
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 800;
     line-height: 6rem;
     text-transform: uppercase;
     text-align: center;
+
+    @media screen and (min-width: 768px){
+      font-size: 7rem;
+
+    }
   }
 
   &__color {
     color: #1D2025;
-    font-size: 7.6rem;
+    font-size: 6.2rem;
     font-weight: 300;
     line-height: 7rem;
     text-transform: uppercase;
     display: block;
+    @media screen and (min-width: 768px){
+      font-size: 7.6rem;
+
+    }
   }
 
   &__descripcion {
@@ -400,9 +413,20 @@
   }
 
   &__grid {
-    display: flex;
-    gap: 2rem;
+    display: none;
+    @media screen and (min-width: 768px){
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__swipper {
+    display: block;
     margin-bottom: 6rem;
+    @media screen and (min-width: 768px){
+      display: none;
+    }
   }
 
   &__card {
@@ -510,22 +534,30 @@
   }
 }
 /*Solicitudes*/
-
 .solicitudes {
   min-height: 66rem;
   background-color: #1D2025;
 
   &__container {
-    padding: 5rem 0;
+    padding: 5rem 3rem;
+    @media screen and (min-width: 768px){
+      padding: 5rem 0;
+
+    }
   }
 
   &__heading {
     color: #FFF;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 4.8rem;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px){
+      font-size: 3.4rem;
+
+    }
   }
 
   &__subheading {
@@ -534,26 +566,46 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 28px;
-    letter-spacing: 6px;
     text-transform: uppercase;
     background-color: #A5CD00;
-    width: 53.3rem;
+    width: 100%;
     margin: .2rem auto;
+    @media screen and (min-width: 768px){
+      letter-spacing: 6px;
+      width: 53.3rem;
+
+    }
   }
 
   &__descripcion {
-    padding: 5rem;
+    padding: 5rem 0;
     color: #FFFFFF;
     text-align: justify;
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 2.5rem;
+    @media screen and (min-width: 768px){
+      padding: 5rem;
+    }
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: .5rem;
+    @media screen and (min-width: 768px){
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: unset;
+      gap: 2rem;
+    }
+  }
+
+  &__image:nth-child(1) {
+    grid-column: 1/3;
+    @media screen and (min-width: 768px){
+      grid-column: unset;
+    }
   }
 }
 
@@ -566,14 +618,23 @@
   position: relative;
   overflow: hidden;
   background-size: cover;
-  margin-bottom: -8.2rem;
+  margin-bottom: -2rem;
+
+  @media screen and (min-width: 768px){
+    margin-bottom: -8.2rem;
+
+  }
 
   &::before {
     content: '';
     background-color: #1D2025;
     width: 120%;
-    height: 10rem;
+    height: 16.7rem;
     position: absolute;
+    @media screen and (min-width: 768px){
+      height: 10rem;
+
+    }
   }
 
   &:before {
@@ -592,72 +653,105 @@
 
   &__heading {
     color: #FFF;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    line-height: 43px;
+    line-height: 18px;
     text-transform: uppercase;
     text-align: center;
-    position: absolute;
-    top: 15rem;
-    right: 37rem;
+    padding-top: 4.5rem;
+    @media screen and (min-width: 768px){
+      font-size: 4rem;
+      padding-top: 0;
+      line-height: 43px;
+    }
   }
 
   &__heading--regular {
     color: #FFF;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 300;
     line-height: 43px;
     text-transform: uppercase;
+    display: block;
+    @media screen and (min-width: 768px){
+      display: unset;
+      font-size: 4rem;
+
+    }
   }
 
   &__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px){
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__form--heading {
-    color: #FFFFFF;
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 43px;
-    text-transform: uppercase;
+    display: none;
+    @media screen and (min-width: 768px){
+      color: #FFFFFF;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 43px;
+      text-transform: uppercase;
+    }
   }
 
   &__form--subheading {
-    color: #FFF;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 43px;
-    margin: 0;
+    display: none;
+    @media screen and (min-width: 768px){
+      color: #FFF;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 43px;
+      margin: 0;
+    }
   }
 
   &__form {
-    align-self: center;
-    position: relative;
-    margin-left: 4rem;
+    @media screen and (min-width: 768px){
+      align-self: center;
+      position: relative;
+      margin-left: 4rem;
+    }
 
     &::before {
       content: "";
-      border-left: 2px solid #FFFFFF;
-      width: 0.2rem;
-      height: 44.4rem;
-      color: #FFFFFF;
-      position: absolute;
-      top: -1rem;
-      left: -4rem;
+      @media screen and (min-width: 768px){
+        content: "";
+        border-left: 2px solid #FFFFFF;
+        width: 0.2rem;
+        height: 44.4rem;
+        color: #FFFFFF;
+        position: absolute;
+        top: -1rem;
+        left: -4rem;
+      }
     }
   }
 }
 
 .form {
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (min-width: 768px){
+    width: 100%;
+  }
 
   &__field input[type="text"], input[type="email"] {
     border-radius: 10px;
     border: 1px solid #FFF;
     background-color: transparent;
     padding: 1rem;
-    width: 26.8rem;
+    width: 100%;
     margin: .5rem;
+    @media screen and (min-width: 768px){
+      width: 26.8rem;
+      margin: .5rem;
+    }
   }
 
   &__field textarea {
@@ -665,9 +759,14 @@
     border: 1px solid #FFF;
     background-color: transparent;
     padding: 1rem;
-    width: 54.8rem;
+    width: 100%;
     margin: .5rem;
-    height: 9.5rem;
+    height: 25.5rem;
+    @media screen and (min-width: 768px){
+      width: 54.8rem;
+      margin: .5rem;
+      height: 9.5rem;
+    }
   }
 
   &__field input::placeholder {
@@ -692,28 +791,42 @@
     font-size: 1.5rem;
     font-weight: 400;
     display: block;
-    margin-top: 5rem;
-    margin-left: .5rem;
+    margin: 5rem auto;
+    @media screen and (min-width: 768px){
+      margin-top: 5rem;
+      margin-left: .5rem;
+
+    }
   }
 }
 
 
 
 /*Footer*/
-
 .footer {
   min-height: 62rem;
-  background-image: url("/assets/img/footer.png");
+  background-image: url("/assets/img/footer-mobile.png");
   background-size: cover;
   position: relative;
-  height: calc(100% + 1rem);
+
+  @media screen and (min-width: 768px){
+    background-image: url("/assets/img/footer.png");
+    height: calc(100% + 1rem);
+
+  }
 
   &__grid {
-    padding-top: 15rem;
+    padding: 7rem 2rem;
     display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    margin-bottom: 7rem;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px){
+      padding: 15rem 0;
+      flex-direction: row;
+      gap: 3rem;
+      margin-bottom: 7rem;
+
+    }
   }
 }
 
@@ -741,21 +854,37 @@
   }
 
   &:nth-child(1) {
-    width: 30%;
+    width: 90%;
+    @media screen and (min-width: 768px){
+      width: 30%;
+
+    }
   }
   &:nth-child(2) {
-    width: 28%;
+    width: 80%;
+    @media screen and (min-width: 768px) {
+      width: 28%;
+    }
   }
 
   &:nth-child(3) {
-    width: 20%;
+    width: 80%;
+    @media screen and (min-width: 768px){
+      width: 20%;
+    }
   }
 
   &:nth-child(4) {
-    width: 22%;
+    width: 80%;
+    @media screen and (min-width: 768px){
+      width: 22%;
+    }
   }
   &:nth-child(4) {
-    width: 10%;
+    width: 80%;
+    @media screen and (min-width: 768px){
+      width: 10%;
+    }
   }
 }
 
@@ -790,8 +919,26 @@
   }
 }
 
+.optional {
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+}
+
 .spacing {
-  margin-top: 2rem;
+  display: none;
+  @media screen and (min-width: 768px){
+    display: block;
+    margin-top: 2rem;
+  }
+}
+
+
+.image {
+  display: none;
+  @media screen and (min-width: 768px){
+    display: block;
+  }
 }
 
 .bold {
@@ -812,3 +959,9 @@
   }
 }
 
+::ng-deep {
+  .slick-dots li.slick-active button:before {
+    color: #084D34;
+    opacity: 0.75;
+  }
+}

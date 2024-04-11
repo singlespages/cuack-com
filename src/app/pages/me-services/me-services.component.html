@@ -147,6 +147,57 @@
       </div>
     </div>
 
+    <div class="nuestros-servicios__swipper">
+      <ngx-slick-carousel [config]="slideConfigTwo"
+                          class="carousel"
+      >
+        <div ngxSlickItem class="slide">
+          <div class="nuestros-servicios__card">
+            <div class="nuestros-servicios__imagen">
+              <img src="/assets/img/nuestro-servicio-01.png" alt="Diseño-digital">
+            </div>
+            <div class="nuestros-servicios__contenidos nuestros-servicios__contenidos--spacing backOne">
+              <p class="nuestros-servicios__subtitle">Diseño Digital</p>
+              <a class="nuestros-servicios__flecha arrowOne"></a>
+            </div>
+          </div>
+        </div>
+        <div ngxSlickItem class="slide">
+          <div class="nuestros-servicios__card">
+            <div class="nuestros-servicios__imagen">
+              <img src="/assets/img/nuestro-servicio-02.png" alt="Diseño-digital">
+            </div>
+            <div class="nuestros-servicios__contenidos backTwo">
+              <p class="nuestros-servicios__subtitle">Diseño y  <span class="nuestros-servicios__spacing"></span> Desarrollo web</p>
+              <a class="nuestros-servicios__flecha arrowTwo"></a>
+            </div>
+          </div>
+        </div>
+        <div ngxSlickItem class="slide">
+          <div class="nuestros-servicios__card">
+            <div class="nuestros-servicios__imagen">
+              <img src="/assets/img/nuestro-servicio-03.png" alt="Diseño-digital">
+            </div>
+            <div class="nuestros-servicios__contenidos backThree">
+              <p class="nuestros-servicios__subtitle">Diseño  <span class="nuestros-servicios__spacing"></span> de Marca</p>
+              <a class="nuestros-servicios__flecha arrowThree"></a>
+            </div>
+          </div>
+        </div>
+        <div ngxSlickItem class="slide">
+          <div class="nuestros-servicios__card">
+            <div class="nuestros-servicios__imagen">
+              <img src="/assets/img/nuestro-servicio-04.png" alt="Diseño-digital">
+            </div>
+            <div class="nuestros-servicios__contenidos backFour">
+              <p class="nuestros-servicios__subtitle">Comunicación  <span class="nuestros-servicios__spacing"></span> Estratégica</p>
+              <a class="nuestros-servicios__flecha arrowFour"></a>
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+
     <button (click)="navigateTo('/portafolio')" routerLink="/portafolio" class="nuestros-servicios__accion">Ver portafolio </button>
   </div>
 </section>
@@ -161,9 +212,15 @@
     </p>
 
     <div class="solicitudes__grid">
-      <img src="/assets/img/solicitudes-1.png" alt="Solicitudes 1">
-      <img src="/assets/img/solicitudes-2.png" alt="Solicitudes 2">
-      <img src="/assets/img/solicitudes-3.png" alt="Solicitudes 3">
+      <div class="solicitudes__image">
+        <img src="/assets/img/solicitudes-1.png" alt="Solicitudes 1">
+      </div>
+      <div class="solicitudes__image">
+        <img src="/assets/img/solicitudes-2.png" alt="Solicitudes 2">
+      </div>
+      <div class="solicitudes__image">
+        <img src="/assets/img/solicitudes-3.png" alt="Solicitudes 3">
+      </div>
     </div>
   </div>
 </section>
@@ -242,6 +299,8 @@
       <p class="footer-widget__paragraph vineta">Administración de Redes Sociales</p>
       <p class="footer-widget__paragraph vineta">Publicidad Estratégica</p>
       <p class="footer-widget__paragraph vineta">Ilustración</p>
+      <p class="footer-widget__paragraph vineta optional">Diseño 3D</p>
+      <p class="footer-widget__paragraph vineta optional">Experiencia de Usuario</p>
     </div>
 
     <div class="footer-widget spacing">
@@ -249,7 +308,7 @@
       <p class="footer-widget__paragraph vineta">Experiencia de Usuario</p>
     </div>
 
-    <div class="footer-widget">
+    <div class="footer-widget image">
       <img src="/assets/svg/croquis.svg" class="logo" alt="Croquis Mapa">
     </div>
 
