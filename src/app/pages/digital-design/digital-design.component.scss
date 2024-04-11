@@ -262,6 +262,11 @@
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    white-space: nowrap;
+
+    @media screen and (min-width: 400px) {
+      white-space: normal;
+    }
 
     @media screen and (min-width: 768px) {
       padding: 1.5rem 2rem;
