@@ -1,19 +1,29 @@
 
 /*Footer*/
-
 .footer {
   min-height: 62rem;
-  background-image: url("/assets/img/footer.png");
+  background-image: url("/assets/img/footer-mobile.png");
   background-size: cover;
   position: relative;
-  height: calc(100% + 1rem);
+
+  @media screen and (min-width: 768px){
+    background-image: url("/assets/img/footer.png");
+    height: calc(100% + 1rem);
+
+  }
 
   &__grid {
-    padding-top: 15rem;
+    padding: 7rem 2rem;
     display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    margin-bottom: 7rem;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px){
+      padding: 15rem 0;
+      flex-direction: row;
+      gap: 3rem;
+      margin-bottom: 7rem;
+
+    }
   }
 }
 
@@ -41,21 +51,37 @@
   }
 
   &:nth-child(1) {
-    width: 30%;
+    width: 90%;
+    @media screen and (min-width: 768px){
+      width: 30%;
+
+    }
   }
   &:nth-child(2) {
-    width: 28%;
+    width: 80%;
+    @media screen and (min-width: 768px) {
+      width: 28%;
+    }
   }
 
   &:nth-child(3) {
-    width: 20%;
+    width: 80%;
+    @media screen and (min-width: 768px){
+      width: 20%;
+    }
   }
 
   &:nth-child(4) {
-    width: 22%;
+    width: 80%;
+    @media screen and (min-width: 768px){
+      width: 22%;
+    }
   }
   &:nth-child(4) {
-    width: 10%;
+    width: 80%;
+    @media screen and (min-width: 768px){
+      width: 10%;
+    }
   }
 }
 
@@ -90,8 +116,26 @@
   }
 }
 
+.optional {
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+}
+
 .spacing {
-  margin-top: 2rem;
+  display: none;
+  @media screen and (min-width: 768px){
+    display: block;
+    margin-top: 2rem;
+  }
+}
+
+
+.image {
+  display: none;
+  @media screen and (min-width: 768px){
+    display: block;
+  }
 }
 
 .bold {
@@ -112,3 +156,9 @@
   }
 }
 
+::ng-deep {
+  .slick-dots li.slick-active button:before {
+    color: #084D34;
+    opacity: 0.75;
+  }
+}
