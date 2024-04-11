@@ -19,7 +19,7 @@
       <a routerLink="/contacto" class="navegacion__link" routerLinkActive="active">Contáctanos</a>
     </nav>
   </div>
-  <div class="contenedor">
+  <div class="header__container contenedor">
     <div class="header__contenido">
       <div class="header__picture">
         <img src="/assets/img/dogs.png" alt="Dogs de portada">
@@ -27,6 +27,12 @@
       <div class="header__descripcion">
         <h1 class="header__heading">Descubre Cómo Podemos<span class="header__title" [class]="activeTab == 1 ? 'red' : activeTab == 2 ? 'orange' : activeTab == 3 ? 'green' : activeTab == 4 ? 'blue' : ''  ">Ayudarte</span></h1>
       </div>
+    </div>
+  </div>
+  <div class="header__mobile">
+    <h1 class="header__heading header__heading--mobile">Descubre Cómo Podemos<span class="header__title" [class]="activeTab == 1 ? 'red' : activeTab == 2 ? 'orange' : activeTab == 3 ? 'green' : activeTab == 4 ? 'blue' : ''  ">Ayudarte</span></h1>
+    <div class="header__picture__mobile">
+      <img src="/assets/img/dogs-mobile.png" alt="Dogs de portada">
     </div>
   </div>
 </header>
@@ -62,8 +68,5 @@
     </ng-container>
 
   </div>
-
-
-
 </section>
 
