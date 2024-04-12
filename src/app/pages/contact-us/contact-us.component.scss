@@ -12,16 +12,39 @@
     content: '';
     background-color: #1D2025;
     width: 120%;
-    height: 13rem;
+    height: 15rem;
     position: absolute;
   }
 
   &:after {
-    transform: rotate(3deg);
-    top: 59rem;
+    transform: rotate(-3deg);
+    top: 84%;
     left: -.5rem;
+    @media screen and (min-width: 768px){
+      transform: rotate(3deg);
+      top: 59rem;
+    }
   }
 
+  &__container {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__mobile {
+    @media screen and (min-width: 768px){
+      display: none;
+    }
+  }
+
+  &__picture__mobile {
+    margin: 0 auto;
+    width: fit-content;
+    padding-top: 9rem;
+  }
 
   &__contenido {
     display: grid;
@@ -44,6 +67,15 @@
     font-weight: 800;
     line-height: 85px; /* 106.25% */
     text-transform: uppercase;
+
+    &--mobile {
+      width: 100%;
+      margin: auto;
+      font-size: 2.8rem;
+      line-height: 3rem;
+      text-align: center;
+      padding-top: 8rem;
+    }
   }
 
   &__green {
@@ -61,66 +93,70 @@
 
 /*Navegacion*/
 .navegacion {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  display: none;
+  @media screen and (min-width: 768px) {
 
-  &__link {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 
-    &--dropdown {
-      cursor: pointer;
-      transform: translateX(50%);
+    &__link {
+
+      &--dropdown {
+        cursor: pointer;
+        transform: translateX(50%);
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0.7rem;
+          left: -0.7rem;
+          transform: translateX(-50%);
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid #fff;
+        }
+      }
+
+      &.active {
+        border-bottom: 4px solid #F27E00;
+        padding-bottom: 2rem;
+        font-weight: 700;
+      }
+
+    }
+
+    &__dropdown-menu {
+      display: none;
+      background-color: #ffffff;
+      position: absolute;
+      top: 3rem;
+      left: 28rem;
+      min-height: 15rem;
+      border-radius: .5rem;
+      width: 40%;
+      padding: 2rem;
+      transform: translateX(-50%);
       &::before {
         content: '';
         position: absolute;
-        top: 0.7rem;
-        left: -0.7rem;
+        top: -.8rem; // Posición ajustable según tu diseño
+        left: 50%;
         transform: translateX(-50%);
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 6px solid #fff;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff; // Color de la pirámide
+      }
+      &.active {
+        display: block;
       }
     }
 
-    &.active {
-      border-bottom: 4px solid #F27E00;
-      padding-bottom: 2rem;
-      font-weight: 700;
-    }
-
-  }
-
-  &__dropdown-menu {
-    display: none;
-    background-color: #ffffff;
-    position: absolute;
-    top: 3rem;
-    left: 28rem;
-    min-height: 15rem;
-    border-radius: .5rem;
-    width: 40%;
-    padding: 2rem;
-    transform: translateX(-50%);
-    &::before {
-      content: '';
-      position: absolute;
-      top: -.8rem; // Posición ajustable según tu diseño
-      left: 50%;
-      transform: translateX(-50%);
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #fff; // Color de la pirámide
-    }
-    &.active {
+    &__dropdown-item { // Corregido el nombre de la clase
       display: block;
+      margin-bottom: 1rem; // Espacio entre ítems
+      color: #1D2025;
     }
-  }
-
-  &__dropdown-item { // Corregido el nombre de la clase
-    display: block;
-    margin-bottom: 1rem; // Espacio entre ítems
-    color: #1D2025;
   }
 }
 
@@ -131,6 +167,10 @@
 
   &__container {
     position: relative;
+    padding: 0 2rem;
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
   }
 
   &__home {
@@ -154,11 +194,16 @@
 
   &__heading {
     color: #FFFFFF;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    line-height: 4.5rem;
+    line-height: 3rem;
     margin-bottom: 5rem;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      font-size: 4rem;
+      line-height: 4.5rem;
+
+    }
   }
 
   &__subtitle {
@@ -183,14 +228,22 @@
     content: '';
     background-color: #1D2025;
     width: 120%;
-    height: 10rem;
+    height: 12rem;
     position: absolute;
+    @media screen and (min-width: 768px) {
+      height: 10rem;
+
+    }
   }
 
   &:before {
     transform: rotate(-3deg);
-    top: -6rem;
+    top: -2%;
     left: -1rem;
+    @media screen and (min-width: 768px) {
+      top: -6rem;
+
+    }
   }
 
   &__container {
@@ -203,70 +256,108 @@
 
   &__heading {
     color: #FFF;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 43px;
     text-transform: uppercase;
     text-align: center;
+    @media screen and (min-width: 768px){
+      font-size: 4rem;
+
+    }
   }
 
   &__heading--regular {
     color: #FFF;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 300;
     line-height: 43px;
     text-transform: uppercase;
+    display: block;
+    @media screen and (min-width: 768px){
+      display: unset;
+      font-size: 4rem;
+
+    }
   }
 
   &__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px){
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+    }
   }
 
   &__form--heading {
-    color: #A5CD00;
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 43px;
-    text-transform: uppercase;
+    display: none;
+    @media screen and (min-width: 768px){
+      display: block;
+      color: #A5CD00;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 43px;
+      text-transform: uppercase;
+    }
   }
 
   &__form--subheading {
-    color: #FFF;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 43px;
-    margin: 0;
+    display: none;
+    @media screen and (min-width: 768px){
+      display: block;
+      color: #FFF;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 43px;
+      margin: 0;
+    }
   }
 
   &__form {
-    align-self: center;
-    position: relative;
-    margin-left: 4rem;
+    @media screen and (min-width: 768px){
+      align-self: center;
+      position: relative;
+      margin-left: 4rem;
+    }
 
     &::before {
       content: "";
-      border-left: 2px solid #FFFFFF;
-      width: 0.2rem;
-      height: 41.4rem;
-      color: #FFFFFF;
-      position: absolute;
-      top: -1rem;
-      left: -4rem;
+      @media screen and (min-width: 768px){
+        content: "";
+        border-left: 2px solid #FFFFFF;
+        width: 0.2rem;
+        height: 41.4rem;
+        color: #FFFFFF;
+        position: absolute;
+        top: -1rem;
+        left: -4rem;
+
+      }
     }
   }
 
 }
 
 .form {
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (min-width: 768px){
+    width: 100%;
+  }
 
   &__field input[type="text"], input[type="email"] {
     border-radius: 10px;
     border: 1px solid #FFF;
     background-color: transparent;
     padding: 1rem;
-    width: 26.8rem;
-    margin: .5rem;
+    width: 100%;
+    margin: .5rem 0;
+    @media screen and (min-width: 768px){
+      width: 26.8rem;
+      margin: .5rem;
+    }
   }
 
   &__field textarea {
@@ -274,9 +365,14 @@
     border: 1px solid #FFF;
     background-color: transparent;
     padding: 1rem;
-    width: 54.8rem;
-    margin: .5rem;
-    height: 9.5rem;
+    width: 100%;
+    margin: .5rem 0;
+    height: 25.5rem;
+    @media screen and (min-width: 768px){
+      width: 54.8rem;
+      margin: .5rem;
+      height: 9.5rem;
+    }
   }
 
   &__field input::placeholder {
@@ -301,7 +397,11 @@
     font-size: 1.5rem;
     font-weight: 400;
     display: block;
-    margin-top: 5rem;
-    margin-left: .5rem;
+    margin: 5rem auto;
+    @media screen and (min-width: 768px){
+      margin-top: 5rem;
+      margin-left: .5rem;
+
+    }
   }
 }
