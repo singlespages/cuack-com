@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {FooterComponent} from "../footer/footer.component";
+import {SlickCarouselModule} from "ngx-slick-carousel";
 
 @Component({
   selector: 'app-blog',
@@ -8,12 +9,19 @@ import {FooterComponent} from "../footer/footer.component";
     imports: [
         RouterLink,
         FooterComponent,
-        RouterLinkActive
+        RouterLinkActive,
+        SlickCarouselModule
     ],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.scss'
 })
 export class BlogComponent {
+  slideConfigTwo = {
+    infinite: true,
+    "slidesToShow": 1,
+    dots: true,
+    arrows: false
+  };
   isMenuOpen: boolean = false;
 
   constructor(private router: Router) {}
