@@ -18,6 +18,12 @@ import {NgIf} from "@angular/common";
 export class HomeComponent implements AfterViewInit{
   isMenuOpen: boolean = false;
   menuOpen: boolean = false;
+
+  isSubmenuOpen: boolean = false;
+
+  toggleSubmenu() {
+    this.isSubmenuOpen = !this.isSubmenuOpen;
+  }
   slideConfig = {
     infinite: true,
     "slidesToShow": 1,
@@ -44,7 +50,6 @@ export class HomeComponent implements AfterViewInit{
     event.preventDefault();
     this.isMenuOpen = !this.isMenuOpen;
   }
-
   ngAfterViewInit(): void {
 
   }
