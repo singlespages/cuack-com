@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SlickCarouselModule} from "ngx-slick-carousel";
+import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-me-services',
   standalone: true,
-    imports: [
-        RouterLink,
-        RouterLinkActive,
-        SlickCarouselModule
-    ],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    SlickCarouselModule,
+    NavMobileComponent,
+    NgIf
+  ],
   templateUrl: './me-services.component.html',
   styleUrl: './me-services.component.scss'
 })
@@ -22,7 +26,17 @@ export class MeServicesComponent {
     arrows: false
   };
 
-  constructor(private router: Router) {}
+  screenWidth!: number;
+
+  constructor(private router: Router) {
+    this.screenWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.screenWidth = window.innerWidth;
+  }
+
   scrollToTop() {
     window.scrollTo(0, 0);
   }

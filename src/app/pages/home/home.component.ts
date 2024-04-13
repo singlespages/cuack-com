@@ -1,7 +1,8 @@
-import {AfterViewInit, Component} from '@angular/core';
+import {AfterViewInit, Component, HostListener} from '@angular/core';
 import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SlickCarouselModule} from "ngx-slick-carousel";
 import {NgIf} from "@angular/common";
+import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,8 @@ import {NgIf} from "@angular/common";
     RouterLinkActive,
     RouterLink,
     SlickCarouselModule,
-    NgIf
+    NgIf,
+    NavMobileComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -35,7 +37,16 @@ export class HomeComponent implements AfterViewInit{
     "slidesToShow": 2,
   };
 
-  constructor(private router: Router) {}
+  screenWidth!: number;
+
+  constructor(private router: Router) {
+    this.screenWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.screenWidth = window.innerWidth;
+  }
 
   scrollToTop() {
     window.scrollTo(0, 0);

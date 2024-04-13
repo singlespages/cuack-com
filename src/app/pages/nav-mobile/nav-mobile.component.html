@@ -1,0 +1,35 @@
+<!--Inicio menu Mobile-->
+<div class="cabecera">
+  <div class="cabecera__logo cabecera__logo--izquierdo" *ngIf="menuOpen">
+    <img src="/assets/img/logo-mobile.png"  alt="Logo Cuack">
+  </div>
+  <button (click)="toggleMenuMobile()" class="cabecera__logo cabecera__logo--derecho">
+    <img [src]="menuOpen ? '/assets/svg/menu-close.svg' : '/assets/svg/menu-open.svg'" alt="Menú">
+  </button>
+</div>
+<nav class="navegacion--mobile" [class]="{'abierto': menuOpen}" >
+  <div class="navegacion--mobile__container">
+    <ul class="navegacion--mobile__items">
+      <li routerLink="/quienes-somos" class="navegacion--mobile__links" routerLinkActive="active">Quiénes somos</li>
+      <div class="navegacion--mobile__subitems">
+        <li routerLink="/nuestros-servicios" class="navegacion--mobile__links navegacion--mobile__links--hide" routerLinkActive="active">Nuestros servicios</li>
+        <li (click)="toggleSubmenu()">&#9660;  <span *ngIf="isSubmenuOpen"></span></li>
+      </div>
+      <div class="submenu" *ngIf="isSubmenuOpen">
+        <ul>
+          <li routerLink="/diseno-digital" class="navegacion--mobile__sublinks">Diseño Digital</li>
+          <li routerLink="/servicio2" class="navegacion--mobile__sublinks">Diseño y Desarrollo Web</li>
+          <li routerLink="/servicio3" class="navegacion--mobile__sublinks">Diseño de Marca</li>
+          <li routerLink="/servicio4" class="navegacion--mobile__sublinks">Comunicación Estratégica</li>
+        </ul>
+      </div>
+      <li routerLink="/portafolio" class="navegacion--mobile__links" routerLinkActive="active">Portafolio</li>
+      <li routerLink="/blog" class="navegacion--mobile__links" routerLinkActive="active">Blog</li>
+      <li routerLink="/contacto" class="navegacion--mobile__links navegacion--mobile__links--hide" routerLinkActive="active">Contáctanos</li>
+    </ul>
+  </div>
+  <p class="navegacion--mobile__footer">
+    <span class="navegacion--mobile__color">2024 Cuackcolombia</span> Agencia de Marketing Digital
+    Barranquilla Colombia
+  </p>
+</nav>
