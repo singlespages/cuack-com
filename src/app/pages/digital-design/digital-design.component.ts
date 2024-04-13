@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {NgIf, NgSwitchCase} from "@angular/common";
 import {CustomPageDesignComponent} from "../subpages/custom-page-design/custom-page-design.component";
@@ -8,6 +8,7 @@ import {
   SubpageStrategicCommunicationComponent
 } from "../subpages/subpage-strategic-communication/subpage-strategic-communication.component";
 import {SlickCarouselModule} from "ngx-slick-carousel";
+import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 
 @Component({
   selector: 'app-digital-design',
@@ -21,13 +22,18 @@ import {SlickCarouselModule} from "ngx-slick-carousel";
     SubPageDesignMarkComponent,
     SubpageStrategicCommunicationComponent,
     SlickCarouselModule,
-    RouterLinkActive
+    RouterLinkActive,
+    NavMobileComponent
   ],
   templateUrl: './digital-design.component.html',
   styleUrl: './digital-design.component.scss'
 })
 export class DigitalDesignComponent {
   isMenuOpen: boolean = false;
+  screenWidth!: number;
+  constructor() {
+    this.screenWidth = window.innerWidth;
+  }
 
   toggleMenu(event: Event): void {
     event.preventDefault();
@@ -46,5 +52,10 @@ export class DigitalDesignComponent {
     dots: false,
     arrows: true
   };
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.screenWidth = window.innerWidth;
+  }
 
 }

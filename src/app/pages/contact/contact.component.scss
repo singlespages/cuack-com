@@ -14,6 +14,12 @@
 
   }
 
+  @media screen and (min-width:  1900px) {
+    min-height: 102rem;
+    margin-bottom: -11.2rem;
+
+  }
+
   &::before {
     content: '';
     background-color: #1D2025;
@@ -24,16 +30,27 @@
       height: 10rem;
 
     }
+
+    @media screen and (min-width: 1900px) {
+      height: 19rem;
+    }
   }
 
   &:before {
     transform: rotate(-3deg);
     top: -5rem;
     left: -1rem;
+    @media screen and (min-width: 1900px) {
+      top: -9rem;
+
+    }
   }
 
   &__container {
     padding: 10rem 0 1.5rem 0;
+    @media screen and (min-width: 1900px) {
+      padding: 18rem 0 1.5rem 0;
+    }
   }
 
   &__imagen {

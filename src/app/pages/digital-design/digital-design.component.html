@@ -18,6 +18,11 @@
       <a routerLink="/blog" class="navegacion__link" routerLinkActive="active">Blog</a>
       <a routerLink="/contacto" class="navegacion__link" routerLinkActive="active">Contáctanos</a>
     </nav>
+    <!--Inicio menu Mobile-->
+    <div class="header__responsive" *ngIf="screenWidth <768">
+      <app-nav-mobile></app-nav-mobile>
+    </div>
+    <!--Fin menu mobile-->
   </div>
   <div class="header__container contenedor">
     <div class="header__contenido">
