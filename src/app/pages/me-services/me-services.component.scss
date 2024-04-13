@@ -20,6 +20,10 @@
     width: 120%;
     height: 13rem;
     position: absolute;
+    @media screen and (min-width: 1900px) {
+      height: 14rem;
+
+    }
   }
 
   &:after {
@@ -622,6 +626,11 @@
 
   @media screen and (min-width: 768px){
     margin-bottom: -10.2rem;
+  }
+
+  @media screen and (min-width:  1900px) {
+    min-height: 102rem;
+    margin-bottom: -11.2rem;
 
   }
 
@@ -633,7 +642,9 @@
     position: absolute;
     @media screen and (min-width: 768px){
       height: 10rem;
-
+    }
+    @media screen and (min-width: 1900px) {
+      height: 19rem;
     }
   }
 
@@ -641,10 +652,17 @@
     transform: rotate(-3deg);
     top: -5rem;
     left: -1rem;
+    @media screen and (min-width: 1900px) {
+      top: -9rem;
+
+    }
   }
 
   &__container {
     padding: 10rem 0 1.5rem 0;
+    @media screen and (min-width: 1900px) {
+      padding: 18rem 0 1.5rem 0;
+    }
   }
 
   &__imagen {
