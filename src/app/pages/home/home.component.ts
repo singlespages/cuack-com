@@ -1,6 +1,7 @@
 import {AfterViewInit, Component} from '@angular/core';
 import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SlickCarouselModule} from "ngx-slick-carousel";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-home',
@@ -8,13 +9,15 @@ import {SlickCarouselModule} from "ngx-slick-carousel";
   imports: [
     RouterLinkActive,
     RouterLink,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgIf
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements AfterViewInit{
   isMenuOpen: boolean = false;
+  menuOpen: boolean = false;
   slideConfig = {
     infinite: true,
     "slidesToShow": 1,
@@ -61,5 +64,10 @@ export class HomeComponent implements AfterViewInit{
   beforeChange(e: any) {
     console.log('beforeChange');
   }
+
+  toggleMenuMobile() {
+    this.menuOpen = !this.menuOpen;
+  }
+
 
 }

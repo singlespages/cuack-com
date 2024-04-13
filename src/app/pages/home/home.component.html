@@ -19,6 +19,23 @@
       <a routerLink="/blog" class="navegacion__link" routerLinkActive="active">Blog</a>
       <a routerLink="/contacto" class="navegacion__link" routerLinkActive="active">Contáctanos</a>
     </nav>
+    <div class="cabecera">
+      <div class="cabecera__logo cabecera__logo--izquierdo" *ngIf="menuOpen">
+          <img src="/assets/img/logo-mobile.png"  alt="Logo Cuack">
+      </div>
+      <button (click)="toggleMenuMobile()" class="cabecera__logo cabecera__logo--derecho">
+        <img [src]="menuOpen ? '/assets/svg/menu-close.svg' : '/assets/svg/menu-open.svg'" alt="Menú">
+      </button>
+    </div>
+    <nav class="navegacion--mobile" [class]="{'abierto': menuOpen}" >
+      <div class="navegacion--mobile__opciones">
+        <a routerLink="/quienes-somos" class="navegacion__link__mobile" routerLinkActive="active">Quiénes somos</a>
+        <a routerLink="/nuestros-servicios" class="navegacion__link__mobile" routerLinkActive="active">Nuestros servicios</a>
+        <a routerLink="/portafolio" class="navegacion__link__mobile" routerLinkActive="active">Portafolio</a>
+        <a routerLink="/blog" class="navegacion__link__mobile" routerLinkActive="active">Blog</a>
+        <a routerLink="/contacto" class="navegacion__link__mobile" routerLinkActive="active">Contáctanos</a>
+      </div>
+    </nav>
   </div>
   <div class="header__container contenedor">
     <div class="header__contenido">
