@@ -8,6 +8,11 @@
   overflow: hidden;
   margin-bottom: -6.2rem;
 
+  @media screen and (min-width: 1900px) {
+    background-size:  cover;
+
+  }
+
   &::after {
     content: '';
     background-color: #1D2025;
@@ -216,7 +221,7 @@
 /*Section contacto*/
 
 .contact {
-  background-image: url("/assets/svg/fondo-green.svg");
+  background-image: url("/assets/img/fondo-green-bg.png");
   background-repeat: no-repeat;
   background-position: left;
   position: relative;
@@ -228,28 +233,11 @@
     margin-bottom: -10.4rem;
 
   }
+  @media screen and (min-width: 1900px) {
+    margin-bottom: -11.4rem;
 
-  &::before {
-    content: '';
-    background-color: #1D2025;
-    width: 120%;
-    height: 12rem;
-    position: absolute;
-    @media screen and (min-width: 768px) {
-      height: 10rem;
-
-    }
   }
 
-  &:before {
-    transform: rotate(-3deg);
-    top: -2%;
-    left: -1rem;
-    @media screen and (min-width: 768px) {
-      top: -6rem;
-
-    }
-  }
 
   &__container {
     padding: 10rem 0 9rem 0;

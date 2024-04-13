@@ -14,6 +14,10 @@
     margin-bottom: -6.2rem;
   }
 
+  @media screen and (min-width: 1900px) {
+      background-size: cover;
+  }
+
   &::after {
     content: '';
     background-color: #1D2025;
@@ -408,6 +412,10 @@
       gap: 5rem 1.5rem;
       margin: auto;
     }
+
+    @media screen and (min-width: 1900px) {
+      width: 55%;
+    }
   }
 
   &__swipper {
@@ -522,7 +530,11 @@
   @media screen and (min-width: 768px) {
     padding: 10rem;
     margin-bottom: -10rem;
+  }
 
+  @media screen and (min-width: 1900px) {
+      min-height: 48rem;
+      margin-bottom: -11rem;
   }
 
   &__heading {
