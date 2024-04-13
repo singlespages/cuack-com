@@ -24,6 +24,9 @@
     width: 120%;
     height: 13rem;
     position: absolute;
+    @media screen and (min-width: 1900px) {
+      height: 19rem;
+    }
   }
 
   &:after {
@@ -34,7 +37,10 @@
     @media screen  and (min-width: 768px){
       transform: rotate(3deg);
       top: 57rem;
-
+    }
+    @media screen and (min-width: 1900px) {
+      left: -1.5rem;
+      top: 54rem;
     }
   }
 
@@ -447,7 +453,10 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
       padding: 2rem;
+    }
 
+    @media screen and (min-width:1900px ) {
+      padding: 3rem 20rem;
     }
   }
 
@@ -458,6 +467,9 @@
     padding-top: 4rem;
     @media screen and (min-width: 768px){
       padding: 6rem;
+    }
+    @media screen and (min-width: 1900px) {
+        padding: 6rem 10rem;
     }
   }
 
@@ -516,7 +528,10 @@
     @media screen and (min-width: 768px){
       width: 30%;
       margin: 0 auto;
+    }
 
+    @media screen and (min-width: 1900px) {
+      width: 20%;
     }
 
     &:hover {
@@ -541,12 +556,21 @@
     margin-bottom: -10rem;
   }
 
+  @media screen and (min-width: 1900px) {
+    background-size: cover;
+    min-height: 82rem;
+    margin-bottom: -12rem;
+  }
+
   &__grid {
     display: none;
     @media screen and (min-width: 768px){
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       padding: 2rem 0 2rem 2rem;
+    }
+    @media screen and (min-width: 1900px) {
+      padding: 6rem 15rem 2rem 15rem;;
     }
     &--mobile {
       display: grid;
@@ -592,7 +616,11 @@
 
     @media screen and (min-width: 768px){
       font-size: 4rem;
+    }
 
+    @media screen and (min-width: 1900px) {
+      display: block;
+      margin-bottom: 4rem;
     }
   }
 
@@ -634,7 +662,10 @@
 
     @media screen and (min-width: 768px){
       width: 30%;
+    }
 
+    @media screen and (min-width: 1900px){
+      width: 20%;
     }
 
     &:hover {
