@@ -9,13 +9,6 @@
   &__logo {
     position: absolute;
     top: 0;
-
-    &--izquierdo {
-      width: 11rem;
-      right: 65vw;
-      top: 2rem;
-    }
-
     &--derecho {
       right: 0;
       top: 2rem;
@@ -23,7 +16,8 @@
   }
 
   @media screen and (min-width: 400px){
-    left: 33rem;
+    top: -.5%;
+    left: 85%;
   }
 
   @media screen and (min-width: 768px){
@@ -51,6 +45,21 @@
 
   &.abierto {
     height: 100%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 2rem;
+  }
+
+  &__accion {
+    background-color: transparent;
+    border: none;
+    display: block;
+    width: 5rem;
   }
 
   &__container {
@@ -109,3 +118,4 @@
     display: none;
   }
 }
+

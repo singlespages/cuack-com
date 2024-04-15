@@ -1,14 +1,19 @@
 <!--Inicio menu Mobile-->
-<div class="cabecera">
-  <div class="cabecera__logo cabecera__logo--izquierdo" *ngIf="menuOpen">
-    <img src="/assets/img/logo-mobile.png"  alt="Logo Cuack">
-  </div>
+<div class="cabecera" *ngIf="!menuOpen">
   <button (click)="toggleMenuMobile()" class="cabecera__logo cabecera__logo--derecho">
-    <img [src]="menuOpen ? '/assets/svg/menu-close.svg' : '/assets/svg/menu-open.svg'" alt="Menú">
+    <img [src]="'/assets/svg/menu-open.svg'" alt="Menú">
   </button>
 </div>
 <nav class="navegacion--mobile" [class]="{'abierto': menuOpen}" >
   <div class="navegacion--mobile__container">
+    <div class="navegacion--mobile__header">
+      <div class="">
+        <img src="/assets/img/logo-mobile.png"  alt="Logo Cuack">
+      </div>
+      <button (click)="toggleMenuMobile()" class="navegacion--mobile__accion">
+        <img src="/assets/svg/menu-close.svg" alt="Menú">
+      </button>
+    </div>
     <ul class="navegacion--mobile__items">
       <li routerLink="/quienes-somos" class="navegacion--mobile__links" routerLinkActive="active">Quiénes somos</li>
       <div class="navegacion--mobile__subitems">
