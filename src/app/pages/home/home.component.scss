@@ -730,8 +730,8 @@
     &::before {
       content: "";
       position: absolute;
-      left: 11rem;
-      top: -2.3rem;
+      left: 9rem;
+      top: -2rem;
       background-image: url("/assets/svg/arrow_right_alt.svg");
       transform: translateY(-50%);
       width: 18.0rem;
@@ -740,6 +740,21 @@
       background-position-x: -16.5rem;
       background-repeat: no-repeat;
       transition: background-position .3s ease-in-out;
+
+      @media screen and (min-width: 400px) {
+        left: 11rem;
+        top: -2.3rem;
+      }
+
+      @media screen and (min-width: 500px) {
+        left: 13rem;
+        top: -3.1rem;
+      }
+
+      @media screen and (min-width: 1500px) {
+        left: 11rem;
+        top: -2.5rem;
+      }
     }
 
   }
@@ -846,6 +861,9 @@
     width: 120%;
     height: 12.3rem;
     position: absolute;
+    @media screen and (min-width: 400px) {
+      height: 13rem;
+    }
     @media screen and (min-width: 768px){
       height: 10rem;
     }
@@ -870,6 +888,9 @@
 
   &__container {
     padding: 10rem 0 1.5rem 0;
+    @media screen and (min-width: 400px) {
+      padding: 12rem 0 1.5rem 0;
+    }
     @media screen and (min-width: 1900px) {
       padding: 14rem 0 1.5rem 0;
 
