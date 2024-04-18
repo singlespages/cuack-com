@@ -18,6 +18,12 @@
       background-size: cover;
   }
 
+
+  &__logo {
+    cursor: pointer;
+  }
+
+
   &::after {
     content: '';
     background-color: #1D2025;
