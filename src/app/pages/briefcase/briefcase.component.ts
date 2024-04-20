@@ -3,6 +3,9 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 import {FooterComponent} from "../footer/footer.component";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {NgIf} from "@angular/common";
+import {ModalService} from "../../services/modal.service";
+import {ModalComponent} from "../../components/modal/modal.component";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-briefcase',
@@ -12,7 +15,8 @@ import {NgIf} from "@angular/common";
     FooterComponent,
     RouterLinkActive,
     NavMobileComponent,
-    NgIf
+    NgIf,
+    ModalComponent
   ],
   templateUrl: './briefcase.component.html',
   styleUrl: './briefcase.component.scss'
@@ -21,8 +25,17 @@ export class BriefcaseComponent {
   isMenuOpen: boolean = false;
 
   screenWidth!: number;
-  constructor() {
+  display$!: Observable<any>;
+  modalLeft: number = 0;
+  modalTop: number = 0;
+  constructor(
+    private modalService: ModalService
+  ) {
     this.screenWidth = window.innerWidth;
+    this.modalService.watchCoordinates().subscribe(coordinates => {
+      this.modalLeft = coordinates.x;
+      this.modalTop = coordinates.y;
+    });
   }
 
   @HostListener('window:resize', ['$event'])
@@ -35,5 +48,10 @@ export class BriefcaseComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
+  open(event: MouseEvent) {
+    const x = event.clientX;
+    const y = event.clientY;
+    this.modalService.open(x, y);
+  }
 
 }

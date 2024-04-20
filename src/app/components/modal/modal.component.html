@@ -1,0 +1,9 @@
+<ng-container *ngIf="display$ | async as display">
+  <section [class.open]="display === 'open'" (click)="close()" class="section" (click)="close()">
+    <div (click)="$event.stopPropagation()" class="section__container">
+      <!--<button class="section__close" type="button" (click)="close()">X</button>-->
+      <!--<iframe src="https://www.behance.net/gallery/138415537/La-carreta-de-connor-Branding-Visual-identity" style="width: 100%; height: 100vh" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>-->
+      <iframe style="width: 100%; height: 90vh" src="https://www.youtube.com/embed/ladwC6Lrs-M?si=KtEiUTZnB7jqBIjZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+</ng-container>

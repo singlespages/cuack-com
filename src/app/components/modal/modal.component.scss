@@ -1,0 +1,39 @@
+.section {
+  visibility: hidden;
+  opacity: 0;
+  &.open {
+    visibility: inherit;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5); // Reducí la opacidad del fondo para resaltar el modal
+  }
+  display: flex; // Cambié a flex para centrar verticalmente el modal
+  align-items: center; // Centrado vertical
+  justify-content: center; // Centrado horizontal
+  position: fixed; // Cambié a fixed para mantener el modal en la misma posición al hacer scroll
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 250ms ease-in;
+  &__container {
+    width: 90%;
+    max-height: 90vh; // Cambié a 90vh para evitar que el modal ocupe toda la pantalla
+    overflow-y: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+  }
+  &__close {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+  }
+}
