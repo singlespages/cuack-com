@@ -22,7 +22,7 @@ export const routes: Routes = [
     component: MeServicesComponent
   },
   {
-    path: 'diseno-digital',
+    path: 'diseno-digital/:id',
     component: DigitalDesignComponent
   },
   {

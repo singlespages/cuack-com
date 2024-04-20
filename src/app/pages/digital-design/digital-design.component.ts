@@ -1,5 +1,5 @@
 import {Component, HostListener} from '@angular/core';
-import {RouterLink, RouterLinkActive} from "@angular/router";
+import {ActivatedRoute, RouterLink, RouterLinkActive} from "@angular/router";
 import {NgIf, NgSwitchCase} from "@angular/common";
 import {CustomPageDesignComponent} from "../subpages/custom-page-design/custom-page-design.component";
 import {SubpageDesignWebComponent} from "../subpages/subpage-design-web/subpage-design-web.component";
@@ -31,8 +31,12 @@ import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 export class DigitalDesignComponent {
   isMenuOpen: boolean = false;
   screenWidth!: number;
-  constructor() {
+  constructor(private route: ActivatedRoute) {
     this.screenWidth = window.innerWidth;
+    this.route.paramMap.subscribe((params) => {
+      this.activeTab = Number(params.get('id'));
+      this.isMenuOpen = false;
+    })
   }
 
   toggleMenu(event: Event): void {
