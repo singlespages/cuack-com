@@ -181,6 +181,22 @@
       display: block;
       margin-bottom: 1rem; // Espacio entre ítems
       color: #1D2025;
+
+      &.activeOne {
+        color: #FF0031;
+      }
+
+      &.activeTwo {
+        color: #F27E00;
+      }
+
+      &.activeThree {
+        color: #A5CD00;
+      }
+
+      &.activeFour {
+        color: #14BCFF;
+      }
     }
 
   }
