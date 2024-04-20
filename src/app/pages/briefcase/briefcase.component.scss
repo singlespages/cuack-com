@@ -120,6 +120,11 @@
     &__link {
       font-weight: 100;
 
+      &:hover {
+        font-weight: 700;
+        transition: font-weight ease-in .1s;
+      }
+
       &--dropdown {
         cursor: pointer;
         transform: translateX(50%);

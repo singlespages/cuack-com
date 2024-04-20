@@ -152,6 +152,10 @@
     &__link {
       font-weight: 100;
 
+      &:hover {
+        font-weight: 700;
+      }
+
       &--dropdown {
         cursor: pointer;
         transform: translateX(50%);
