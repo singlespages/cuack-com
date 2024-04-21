@@ -1,0 +1,272 @@
+.header {
+  min-height: 65rem;
+  //background-image: linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%), url("/assets/img/header-bg-blog.png");
+  background-repeat: no-repeat;
+  background-size:  cover;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -18.2rem;
+
+  @media screen and (min-width: 768px) {
+    //background-image: linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%), url("/assets/img/header-bg-blog.png");
+    background-size:  100%, 175rem;
+    margin-bottom: -6.2rem;
+  }
+
+  @media screen and (min-width: 1900px) {
+    background-size: cover;
+  }
+
+
+  &__logo {
+    cursor: pointer;
+  }
+
+
+  &::after {
+    content: '';
+    background-color: #E2E4E3;
+    width: 120%;
+    height: 24rem;
+    position: absolute;
+    @media screen and (min-width: 768px) {
+      height: 22rem;
+
+    }
+  }
+
+  &:after {
+    transform: rotate(-3deg);
+    top: 70%;
+    left: -.5rem;
+    @media screen and (min-width: 768px){
+      transform: rotate(3deg);
+      top: 59rem;
+      left: -1.5rem;
+    }
+  }
+
+  &__container {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__mobile {
+    @media screen and (min-width: 768px){
+      display: none;
+    }
+  }
+
+  &__picture__mobile {
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+
+
+  &__contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-top: 10rem;
+  }
+
+  &__barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 85px; /* 106.25% */
+    text-transform: uppercase;
+
+    &--mobile {
+      width: 100%;
+      margin: auto;
+      font-size: 2.8rem;
+      line-height: 3rem;
+      text-align: center;
+      padding-top: 8rem;
+    }
+  }
+
+  &__green {
+    display: block;
+    color: #A5CD00;
+  }
+
+  &__picture {
+    height: 50rem;
+    width: 86rem;
+    object-fit: cover;
+    margin: 0 0 0 -8.6rem;
+  }
+}
+
+/*Navegacion*/
+.navegacion {
+  display: none;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    &__link {
+      font-weight: 100;
+
+      &:hover {
+        font-weight: 700;
+        transition: font-weight ease-in .1s;
+      }
+
+      &--dropdown {
+        cursor: pointer;
+        transform: translateX(50%);
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0.7rem;
+          left: -0.7rem;
+          transform: translateX(-50%);
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid #fff;
+        }
+      }
+
+      &.active {
+        border-bottom: 4px solid #F27E00;
+        padding-bottom: 2rem;
+        font-weight: 700;
+      }
+
+    }
+
+    &__dropdown-menu {
+      display: none;
+      background-color: #ffffff;
+      position: absolute;
+      top: 3rem;
+      left: 28rem;
+      min-height: 15rem;
+      border-radius: .5rem;
+      width: 40%;
+      padding: 2rem;
+      transform: translateX(-50%);
+      &::before {
+        content: '';
+        position: absolute;
+        top: -.8rem; // Posición ajustable según tu diseño
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff; // Color de la pirámide
+      }
+      &.active {
+        display: block;
+      }
+    }
+
+    &__dropdown-item { // Corregido el nombre de la clase
+      display: block;
+      margin-bottom: 1rem; // Espacio entre ítems
+      color: #1D2025;
+
+      &.activeOne {
+        color: #FF0031;
+      }
+
+      &.activeTwo {
+        color: #F27E00;
+      }
+
+      &.activeThree {
+        color: #A5CD00;
+      }
+
+      &.activeFour {
+        color: #14BCFF;
+      }
+    }
+  }
+}
+
+.blog-detail {
+  min-height: 70rem;
+  background-image: url("/assets/img/fondo-blog-detail.png");
+
+  &__container {
+    position: relative;
+    padding: 0 2rem;
+
+    @media screen and (min-width: 768px){
+      padding: 0;
+
+    }
+  }
+
+  &__home {
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &__home__color {
+    color: #084D34;
+    font-weight: 600;
+  }
+
+  &__grid {
+    display: grid;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 2fr 1fr;
+      gap: 5rem;
+      //align-items: center;
+
+    }
+  }
+
+  &__heading {
+    font-size: 3rem;
+    color: #084D34;
+    font-weight: 700;
+  }
+
+  &__subheading {
+    color: #084D34;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  &__paragraph {
+    color: #000000;
+    font-size: 1.7rem;
+    border-bottom: 1px solid #8B8B8B;
+    padding: 1rem 0 3rem 0;
+    line-height: 2.5rem;
+  }
+
+  &__posts {
+    background-color: #ffffff;
+  }
+
+  &__contents__main {
+    background-color: #ffffff;
+  }
+
+
+}

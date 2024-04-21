@@ -7,6 +7,7 @@ import {SubpageDesignWebComponent} from "./pages/subpages/subpage-design-web/sub
 import {BriefcaseComponent} from "./pages/briefcase/briefcase.component";
 import {BlogComponent} from "./pages/blog/blog.component";
 import {ContactUsComponent} from "./pages/contact-us/contact-us.component";
+import {BlogDetailComponent} from "./pages/blog-detail/blog-detail.component";
 
 export const routes: Routes = [
   {
@@ -36,6 +37,10 @@ export const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent
+  },
+  {
+    path: 'blog/:id',
+    component: BlogDetailComponent
   },
   {
     path: 'contacto',
