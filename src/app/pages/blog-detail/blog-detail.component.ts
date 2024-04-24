@@ -96,7 +96,9 @@ export class BlogDetailComponent {
               titulo: 'Retención de Clientes:',
               descripcion: ' La personalización y la anticipación de necesidades, posibles gracias a la IA, contribuyen a una mayor satisfacción del cliente y retención.'
             },
-          ]
+          ],
+          piePagina: 'En conclusión, el Marketing Potenciado por IA no es simplemente una opción; es el futuro del marketing digital. Aquellos que adoptan esta tecnología innovadora liderarán el camino hacia un futuro más inteligente y conectado en el mundo del marketing digital, estableciendo conexiones más profundas con sus audiencias en un mundo digital en constante cambio.\n',
+          subpie: 'El poder de la Inteligencia Artificial puede llevar tus estrategias de marketing al siguiente nivel, creando así un futuro más brillante y prometedor para tu empresa en este emocionante viaje hacia lo que está por venir.'
         }
       ],
       "metadata": {
