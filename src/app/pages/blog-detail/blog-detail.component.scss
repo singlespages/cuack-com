@@ -264,6 +264,10 @@
     color: #000000;
     font-size: 1.7rem;
     line-height: 2.5rem;
+
+    &--bold {
+      font-weight: 700;
+    }
   }
 
   &__posts {
@@ -296,12 +300,20 @@
   &__subtitle__list {
     color: #084D34;
     font-weight: 700;
+
+    &--color {
+      color: #000000;
+    }
   }
 
   &__paragraph__main {
     color: #000000;
     font-weight: 500;
     line-height: 2.2rem;
+
+    &--spacing {
+      padding: 1.2rem 0;
+    }
   }
 
   &__article {
@@ -313,6 +325,30 @@
     list-style-type: disc;
     color: #084D34;
   }
+
+  &__title__extra {
+    color: #084D34;
+    font-weight: 700;
+    font-size: 2.2rem;
+  }
+
+  &__paragraph__extra__subtitle {
+    font-weight: 700;
+  }
+
+  &__paragraph__extra {
+    color: #000000;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  &__paragraph__extra__contenido {
+    padding-top: 2rem;
+    color: #000000;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+
 
 }
 

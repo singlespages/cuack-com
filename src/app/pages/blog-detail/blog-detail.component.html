@@ -1,4 +1,4 @@
-<header class="header" [style.background-image]="posts[0].foto">
+<header class="header" [style.background-image]="posts.foto">
   <div class="header__barra contenedor">
     <div class="header__logo">
       <img src="/assets/img/logotipo.png" alt="Cuack-image" routerLink="/inicio" routerLinkActive="active">
@@ -27,7 +27,7 @@
   <div class="header__container contenedor">
     <div class="header__contenido">
       <div class="header__descripcion">
-        <h1 class="header__heading">{{posts[0].titulo}}<span class="header__green">{{posts[0].subtitulo}}</span></h1>
+        <h1 class="header__heading">{{posts.titulo}}<span class="header__green">{{posts.subtitulo}}</span></h1>
       </div>
     </div>
   </div>
@@ -40,23 +40,60 @@
 
     <div class="blog-detail__grid">
       <div class="blog-detail__content">
-        <ng-container *ngFor="let post of posts[0].contenido">
+        <ng-container *ngFor="let post of posts.contenido">
           <h4 class="blog-detail__heading">{{post.titulo}}</h4>
           <h4 class="blog-detail__subheading">{{post.subtitulo}}</h4>
           <p class="blog-detail__paragraph">
             {{post.descripcion}}
           </p>
         </ng-container>
+        <!--Contenido Extra-->
+        <div class="blog-detail__extra">
+          <ng-container *ngFor="let post of posts.contenidoExtra">
+            <h4 class="blog-detail__title__extra">{{post.titulo}}</h4>
+
+            <ng-container *ngFor="let posted of post.contents">
+              <p class="blog-detail__paragraph__extra">
+                <span class="blog-detail__paragraph__extra__subtitle">{{posted.subtitulo}}</span>
+                {{posted.parrafo}}
+              </p>
+
+            </ng-container>
+            <hr>
+          </ng-container>
+            <p class="blog-detail__paragraph__extra__contenido">
+               {{posts.pieExtra}}
+            </p>
+        </div>
+        <!--Fin contenido Extra-->
+
+        <!--Contenido digital IA-->
+        <div class="blog-detail__digital">
+          <p class="blog-detail__paragraph__extra">
+            {{posts.contenidoDigital.tituloDigital}}
+          </p>
+          <p class="blog-detail__paragraph__extra">
+            {{posts.contenidoDigital.subtituloDigital}}
+          </p>
+          <p class="blog-detail__paragraph__extra">
+            <span class="blog-detail__paragraph__extra__subtitle">
+              {{posts.contenidoDigital.pieDigital}}
+            </span>
+            {{posts.contenidoDigital.extraDigital}}
+          </p>
+
+        </div>
+        <!--Fin contenido digital-->
 
         <div class="blog-detail__contents">
-          <ng-container *ngFor="let postPrincipal of posts[0].contenidoPrincipal">
+          <ng-container *ngFor="let postPrincipal of posts.contenidoPrincipal">
             <div class="blog-detail__contents__image">
               <img src="{{postPrincipal.imagen}}" alt="">
             </div>
             <div class="blog-detail__contents__main">
               <h4 class="blog-detail__title__main">{{postPrincipal.titulo}}</h4>
               <h4 class="blog-detail__subtitle__main">{{postPrincipal.subtitulo}}</h4>
-              <ng-container *ngFor="let posted of posts[0].contenidoPrincipal">
+              <ng-container *ngFor="let posted of posts.contenidoPrincipal">
                 <div class="blog-detail__contents__posted">
                     <ol class="blog-detail__list__number">
                       <ng-container *ngFor="let post of posted.contents">
@@ -68,8 +105,32 @@
             </div>
           </ng-container>
         </div>
-        <div class="blog-detail__article">
-          <ng-container *ngFor="let posts of posts[0].contenidoAdicional">
+        <!--Estraetico-->
+        <div class="blog-detail__contents">
+          <ng-container *ngFor="let postPrincipal of posts.contenidoEstrategico">
+            <div class="blog-detail__contents__image">
+              <img src="{{postPrincipal.imagen}}" alt="">
+            </div>
+            <div class="blog-detail__contents__main">
+              <h4 class="blog-detail__title__main">{{postPrincipal.titulo}}</h4>
+              <h4 class="blog-detail__subtitle__main">{{postPrincipal.subtitulo}}</h4>
+              <ng-container *ngFor="let posted of posts.contenidoEstrategico">
+                <div class="blog-detail__contents__posted">
+                    <ol class="blog-detail__list__element">
+                      <ng-container *ngFor="let post of posted.contents">
+                        <li class="blog-detail__paragraph__main blog-detail__paragraph__main--spacing"><span class="blog-detail__subtitle__list blog-detail__subtitle__list--color">{{post.titulo}}</span> {{post.descripcion}}</li>
+                      </ng-container>
+                    </ol>
+                </div>
+              </ng-container>
+            </div>
+          </ng-container>
+        </div>
+
+        <!--Fin Estratetico-->
+
+        <div class="blog-detail__article" *ngIf="posts.contenidoAdicional.length > 0">
+          <ng-container *ngFor="let posts of posts.contenidoAdicional">
             <h4 class="blog-detail__subheading">{{posts.titulo}}</h4>
             <p >
               {{posts.subtitulo}}
@@ -87,6 +148,39 @@
             </p>
           </ng-container>
         </div>
+
+        <!--Ventajas-->
+        <div class="blog-detail__article" *ngIf="posts.contenidoExtraAdicional.length > 0">
+          <ng-container *ngFor="let posts of posts.contenidoExtraAdicional">
+            <h4 class="blog-detail__subheading">{{posts.titulo}}</h4>
+            <p>
+              {{posts.subtitulo}}
+            </p>
+            <p>
+              {{posts.articulo}}
+            </p>
+            <hr>
+            <ul class="">
+              <ng-container *ngFor="let post of posts.contents">
+                <li class="blog-detail__paragraph__main blog-detail__paragraph__main--spacing">{{post.descripcion}}</li>
+                <hr>
+              </ng-container>
+            </ul>
+            <p class="blog-detail__paragraph__content">
+              {{posts.piePagina}}
+            </p>
+
+            <p class="blog-detail__paragraph__content">
+              {{posts.subpie}}
+            </p>
+
+            <p class="blog-detail__paragraph__content blog-detail__paragraph__content--bold">
+              {{posts.extrapie}}
+            </p>
+          </ng-container>
+        </div>
+        <!--Fin Ventajas-->
+
       </div>
       <div class="blog-detail__posts">
         <h4 class="blog-detail__titles">
