@@ -54,34 +54,37 @@
               <img src="{{postPrincipal.imagen}}" alt="">
             </div>
             <div class="blog-detail__contents__main">
-              <h4>{{postPrincipal.titulo}}</h4>
-              <h4>{{postPrincipal.subtitulo}}</h4>
+              <h4 class="blog-detail__title__main">{{postPrincipal.titulo}}</h4>
+              <h4 class="blog-detail__subtitle__main">{{postPrincipal.subtitulo}}</h4>
               <ng-container *ngFor="let posted of posts[0].contenidoPrincipal">
                 <div class="blog-detail__contents__posted">
-                  <ng-container *ngFor="let post of posted.contents">
-                    <p>
-                      <span>{{post.titulo}}</span>
-                      {{post.descripcion}}
-                    </p>
-                  </ng-container>
-
+                    <ol class="blog-detail__list__number">
+                      <ng-container *ngFor="let post of posted.contents">
+                        <li class="blog-detail__paragraph__main"><span class="blog-detail__subtitle__list">{{post.titulo}}</span> {{post.descripcion}}</li>
+                      </ng-container>
+                    </ol>
                 </div>
               </ng-container>
             </div>
           </ng-container>
         </div>
-        <div class="blog__detail__article">
+        <div class="blog-detail__article">
           <ng-container *ngFor="let posts of posts[0].contenidoAdicional">
             <h4 class="blog-detail__subheading">{{posts.titulo}}</h4>
             <p >
               {{posts.subtitulo}}
             </p>
-            <ul *ngFor="let post of posts.contents">
-              <li><span>{{post.titulo}}</span> {{post.descripcion}}</li>
-            </ul>
-
-
-
+            <ol class="blog-detail__list__element">
+              <ng-container *ngFor="let post of posts.contents">
+                <li class="blog-detail__paragraph__main"><span class="blog-detail__subtitle__list">{{post.titulo}}</span> {{post.descripcion}}</li>
+              </ng-container>
+            </ol>
+            <p class="blog-detail__paragraph__content">
+              {{posts.piePagina}}
+            </p>
+            <p class="blog-detail__paragraph__content">
+              {{posts.subpie}}
+            </p>
           </ng-container>
         </div>
       </div>
@@ -100,3 +103,16 @@
   </div>
 
 </section>
+
+<section class="destacados">
+  <div class="destacados__content contenedor">
+    <h2 class="destacados__heading">Descubre Nuestros Servicios Destacados</h2>
+    <p class="destacados__description">
+      Explora Nuestros Servicios y Descubre Cómo Pueden Hacer Crecer Tu Negocio
+    </p>
+
+    <a routerLink="/nuestros-servicios" (click)="navigateTo('/nuestros-servicios')" class="destacados__accion"> Leer más</a>
+  </div>
+</section>
+
+<app-footer></app-footer>

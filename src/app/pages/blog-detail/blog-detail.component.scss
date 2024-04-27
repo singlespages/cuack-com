@@ -260,13 +260,141 @@
     line-height: 2.5rem;
   }
 
+  &__paragraph__content {
+    color: #000000;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+
   &__posts {
     background-color: #ffffff;
   }
 
   &__contents__main {
     background-color: #ffffff;
+    padding: 5rem 3rem 10rem 3rem;
+    border-radius: 0 0 2rem 2rem;
   }
 
+  &__title__main {
+    color: #084D34;
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  &__subtitle__main {
+    color: #1D2025;
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  &__list__number {
+    color: #084D34;
+    font-weight: 700;
+  }
+
+  &__subtitle__list {
+    color: #084D34;
+    font-weight: 700;
+  }
+
+  &__paragraph__main {
+    color: #000000;
+    font-weight: 500;
+    line-height: 2.2rem;
+  }
+
+  &__article {
+    padding: 3rem 0 14rem 0;
+
+  }
+
+  &__list__element {
+    list-style-type: disc;
+    color: #084D34;
+  }
 
 }
+
+/*servicios destacados*/
+.destacados {
+  min-height: 30rem;
+  background-image: url("/assets/svg/fondo-estrellado.svg");
+  background-size: cover;
+  padding: 4rem;
+  margin-bottom: -3rem;
+  @media screen and (min-width: 768px) {
+    padding: 10rem;
+    margin-bottom: -10rem;
+  }
+
+  @media screen and (min-width: 1900px) {
+    min-height: 48rem;
+    margin-bottom: -11rem;
+  }
+
+  &__heading {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      font-size: 4rem;
+      line-height: 4.5rem;
+
+    }
+  }
+
+  &__subheading {
+    color: #1D2025;
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    background-color: #A5CD00;
+    width: 38rem;
+    margin: 0 auto;
+    padding: .5rem;
+  }
+
+  &__description {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__accion {
+    display: block;
+    color: #FFFFFF;
+    border-radius: 3px;
+    border: 2px solid #F27E00;
+    background-color: transparent;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 166.5%;
+    text-transform: uppercase;
+    padding: 1rem;
+    width: 45%;
+    margin: 3rem auto;
+    transition: background-color .3s;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      width: 15%;
+
+    }
+
+    &:hover {
+      background-color: #F27E00;
+      color: #1D2025;
+    }
+  }
+}
+

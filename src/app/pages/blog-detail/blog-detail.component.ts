@@ -2,6 +2,7 @@ import {Component, HostListener} from '@angular/core';
 import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {NgForOf, NgIf} from "@angular/common";
+import {FooterComponent} from "../footer/footer.component";
 
 @Component({
   selector: 'app-blog-detail',
@@ -11,7 +12,8 @@ import {NgForOf, NgIf} from "@angular/common";
     RouterLinkActive,
     NavMobileComponent,
     NgIf,
-    NgForOf
+    NgForOf,
+    FooterComponent
   ],
   templateUrl: './blog-detail.component.html',
   styleUrl: './blog-detail.component.scss'
