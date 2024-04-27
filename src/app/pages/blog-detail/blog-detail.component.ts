@@ -655,8 +655,8 @@ export class BlogDetailComponent {
       contenidoEstrategico: [
         {
           imagen: '/assets/img/post-principal-3.png',
-          titulo: 'Integración Estratégica de la IA en tus Campañas',
-          subtitulo: 'La implementación de estrategias de Marketing Potenciado por IA requiere una cuidadosa integración y consideración:',
+          titulo: 'Las estrategias de marketing digital para las empresas tecnológicas incluyen:',
+          subtitulo: '',
           contents: [
             {
               titulo: 'Contenido Estratégico:',
