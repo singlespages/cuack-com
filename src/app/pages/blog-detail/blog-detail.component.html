@@ -42,8 +42,8 @@
       <div class="blog-detail__content">
         <ng-container *ngFor="let post of posts.contenido">
           <h4 class="blog-detail__heading">{{post.titulo}}</h4>
-          <h4 class="blog-detail__subheading">{{post.subtitulo}}</h4>
-          <p class="blog-detail__paragraph">
+          <h4 class="blog-detail__subheading" *ngIf="post.subtitulo">{{post.subtitulo}}</h4>
+          <p class="blog-detail__paragraph" *ngIf="post.descripcion">
             {{post.descripcion}}
           </p>
         </ng-container>
@@ -61,14 +61,17 @@
             </ng-container>
             <hr>
           </ng-container>
-            <p class="blog-detail__paragraph__extra__contenido">
+            <p class="blog-detail__paragraph__extra__contenido" *ngIf="posts.pieExtra">
                {{posts.pieExtra}}
+            </p>
+            <p class="blog-detail__paragraph__extra__regular" *ngIf="posts.pieExtraNormal">
+               {{posts.pieExtraNormal}}
             </p>
         </div>
         <!--Fin contenido Extra-->
 
         <!--Contenido digital IA-->
-        <div class="blog-detail__digital">
+        <div class="blog-detail__digital" *ngIf="posts.contenidoDigital">
           <p class="blog-detail__paragraph__extra">
             {{posts.contenidoDigital.tituloDigital}}
           </p>
@@ -105,6 +108,7 @@
             </div>
           </ng-container>
         </div>
+
         <!--Estraetico-->
         <div class="blog-detail__contents">
           <ng-container *ngFor="let postPrincipal of posts.contenidoEstrategico">
@@ -125,6 +129,10 @@
               </ng-container>
             </div>
           </ng-container>
+        </div>
+
+        <div class="blog-detail__pie__pagina" *ngIf="posts.piePagina">
+          {{posts.piePagina}}
         </div>
 
         <!--Fin Estratetico-->

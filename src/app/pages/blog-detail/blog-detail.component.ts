@@ -270,6 +270,7 @@ export class BlogDetailComponent {
 
       ],
       pieExtra: 'Estas estrategias están diseñadas para destacar la accesibilidad y la creatividad, ajustándose a los presupuestos más modestos de restaurantes de comida rápida y experiencias gastronómicas únicas. ¡Experimenta con estas ideas y encuentra las que mejor se adapten a tu establecimiento!',
+      pieExtraNormal: '',
       contenidoAdicional: [],
       contenidoExtraAdicional: [],
       "metadata": {
@@ -357,6 +358,333 @@ export class BlogDetailComponent {
           extrapie: 'El impacto de la Inteligencia Artificial puede llevar tus estrategias de marketing al siguiente nivel, creando un futuro más brillante y prometedor para tu empresa en el mundo digital en constante cambio.',
         }
       ],
+      pieExtra: '',
+      "metadata": {
+        "descripcion": "Breve descripción del contenido del post para SEO",
+        "palabras_clave": ["keyword1", "keyword2", "keyword3"],
+        "autor": "Nombre del autor del post",
+        "fecha_publicacion": "Fecha de publicación del post en formato YYYY-MM-DD",
+        "categoria": "Categoría del post",
+        "etiquetas": ["etiqueta1", "etiqueta2", "etiqueta3"]
+      }
+    },
+    {
+      "titulo": "Descrube Nuevos Horizontes:",
+      "subtitulo": 'Estrategias Innovadoras para Impulsar tu Mensaje',
+      "slug": "Estrategias Innovadoras para Impulsar tu Mensaje",
+      "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-4-bg.png)",
+      "contenido": [
+        {
+          titulo: 'Diversifica y Fortalece tu Enfoque de Divulgación para un Impacto Duradero',
+          descripcion: 'Si realmente deseas destacar, la divulgación efectiva es fundamental para el éxito de cualquier proyecto o iniciativa. Este artículo te guiará a través de 10 estrategias de divulgación que te permitirán llevar tu mensaje más allá y conectarte de manera impactante con tu audiencia.'
+        },
+      ],
+      contenidoDigital: {
+        tituloDigital: '',
+        subtituloDigital: '',
+        pieDigital: '',
+        extraDigital: ''
+      },
+      contenidoExtra: [
+        {
+          titulo: '1.Alianzas Estratégicas para la Máxima Exposición',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Introduce ofertas especiales de la semana, como "Día del Sabor Urbano" o "Combo Especial". Ofrece precios atractivos para tus platillos más populares.'
+            },
+          ]
+        },
+        {
+          titulo: '2.Contenido Contagioso: El Arte de la Viralidad',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Explora cómo crear contenido viral auténtico que se integre naturalmente en la vida cotidiana, utilizando elementos que aumenten las posibilidades de compartir.'
+            },
+          ]
+        },
+        {
+          titulo: '3.El Poder de los Influencers en tu Estrategia',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Descubre cómo el marketing de influencers puede ser una estrategia efectiva para el crecimiento, identificando cómo asociarte de manera auténtica y relevante con aquellos que comparten tus valores.'
+            },
+          ]
+        },
+        {
+          titulo: '4.Segmentación en el Marketing de Contenidos',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Aprende a utilizar el marketing de contenidos de manera segmentada, comprendiendo a tu audiencia y creando contenido altamente específico que resuelva problemas y satisfaga necesidades.'
+            },
+          ]
+        },
+        {
+          titulo: '5.Lealtad a través de Recompensas Personalizadas',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Explora cómo crear contenido viral auténtico que se integre naturalmente en la vida cotidiana, utilizando elementos que aumenten las posibilidades de compartir.'
+            },
+          ]
+        },
+        {
+          titulo: '6.Contenido Contagioso: El Arte de la Viralidad',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Explora cómo crear contenido viral auténtico que se integre naturalmente en la vida cotidiana, utilizando elementos que aumenten las posibilidades de compartir.'
+            },
+          ]
+        },
+        {
+          titulo: '7.Experiencias de Usuario Personalizadas',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Descubre la importancia de la personalización en la experiencia del usuario, utilizando datos para adaptar cada interacción a las preferencias individuales.'
+            },
+          ]
+        },
+        {
+          titulo: '8.Contenido Interactivo: Involucra a tu Audiencia',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Aprende a crear contenido interactivo que no solo entretenga, sino que también recopile datos valiosos sobre las preferencias y opiniones de tu audiencia.'
+            },
+          ]
+        },
+        {
+          titulo: '9.Anuncios Precisos y Segmentados',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Explora la efectividad de la publicidad pagada mediante plataformas que permitan una segmentación detallada basada en datos demográficos, intereses y comportamientos en línea.'
+            },
+          ]
+        },
+        {
+          titulo: '10.Inmersiones en la Experiencia del Usuario',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Descubre cómo crear experiencias de usuario inmersivas que vayan más allá de lo convencional, utilizando herramientas como la realidad aumentada para proporcionar interacciones únicas.'
+            },
+          ]
+        },
+        {
+          titulo: '11.Retención de Clientes para un Crecimiento Sostenible',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Aprende la importancia de retener a tus clientes existentes mediante estrategias de fidelización y soporte proactivo, construyendo una base sólida para el crecimiento futuro.'
+            },
+          ]
+        },
+
+      ],
+      pieExtra: '',
+      pieExtraNormal: 'Estas estrategias están diseñadas para destacar la accesibilidad y la creatividad, ajustándose a los presupuestos más modestos de restaurantes de comida rápida y experiencias gastronómicas únicas. ¡Experimenta con estas ideas y encuentra las que mejor se adapten a tu establecimiento!',
+      contenidoAdicional: [],
+      contenidoExtraAdicional: [],
+      "metadata": {
+        "descripcion": "Breve descripción del contenido del post para SEO",
+        "palabras_clave": ["keyword1", "keyword2", "keyword3"],
+        "autor": "Nombre del autor del post",
+        "fecha_publicacion": "Fecha de publicación del post en formato YYYY-MM-DD",
+        "categoria": "Categoría del post",
+        "etiquetas": ["etiqueta1", "etiqueta2", "etiqueta3"]
+      }
+    },
+    {
+      "titulo": "Estrategias para instagram ads:",
+      "subtitulo": 'Dominando el arte del anuncio digital',
+      "slug": "Dominando el arte del anuncio digital",
+      "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-5-bg.png)",
+      "contenido": [
+        {
+          titulo: 'Desbloquea el Potencial de Instagram Ads Manager con Nuestros 10 Pasos Clave',
+          descripcion: 'Con nuestra guía, podrás entrar en el emocionante mundo de Instagram Ads Manager. Te ayudará an explotar todo el potencial de tu campaña publicitaria. Cada paso estratégico, desde la elección del objetivo hasta la creación del anuncio, se adapta a sus objetivos de éxito en Instagram.'
+        },
+      ],
+      contenidoDigital: {
+        tituloDigital: '',
+        subtituloDigital: '',
+        pieDigital: '',
+        extraDigital: ''
+      },
+      contenidoExtra: [
+        {
+          titulo: '1.Seleccione un Objetivo de estrategia',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Seleccione un objetivo para comenzar su viaje publicitario. Explora los seis objetivos disponibles y elija el que guiará el éxito de tu campaña en Instagram.'
+            },
+          ]
+        },
+        {
+          titulo: '2. Define la Ubicación de Conversión',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Al definir la ubicación de conversión, puede dirigir efectivamente su tráfico. Este paso es esencial para orientar con precisión sus esfuerzos publicitarios, desde la selección del sitio web hasta las decisiones estratégicas.'
+            },
+          ]
+        },
+        {
+          titulo: '3. Creatividad dinámica para lograr el mayor impacto posible',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Para una personalización efectiva, descubra la opción de creatividad dinámica. ofrece variaciones innovadoras y permite que Facebook optimice la entrega para brindar una experiencia única a cada espectador.'
+            },
+          ]
+        },
+        {
+          titulo: '4. Presupuesto y Programación Estratégicos',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Establece un presupuesto y una programación que se alineen con sus objetivos. Ya sea a diario o a largo plazo, cada decisión tiene un impacto en la entrega de su anuncio. Evite gastos innecesarios y asegúrese de que su anuncio salga en el momento adecuado.'
+            },
+          ]
+        },
+        {
+          titulo: '5. Identifica a tu audiencia Objetivo',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'La audiencia adecuada es esencial para el éxito. Para llegar a las personas adecuadas, considere opciones como audiencias guardadas, personalizadas o similares. Aproveche la orientación detallada para una estrategia aún más precisa.'
+            },
+          ]
+        },
+        {
+          titulo: '6. Seleccione las ubicaciones apropiadas',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Definir el lugar donde se mostrará tu anuncio. Este paso determina la visibilidad de su campaña, ya sea optimizando su presupuesto con ubicaciones Advantage+ o enfocándose exclusivamente en Instagram.'
+            },
+          ]
+        },
+        {
+          titulo: '7.Personaliza la Configuración del Anuncio',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Personalize y nombre tu anuncio para que se muestre de manera efectiva. Asegurate de que todos los detalles estén alineados con sus objetivos publicitarios, y si es relevante, marque la opción "Anuncio colaborativo".'
+            },
+          ]
+        },
+        {
+          titulo: '8.Contenido Interactivo: Involucra a tu Audiencia',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Aprende a crear contenido interactivo que no solo entretenga, sino que también recopile datos valiosos sobre las preferencias y opiniones de tu audiencia.'
+            },
+          ]
+        },
+        {
+          titulo: '8. Creatividad del Anuncio para Impactar Visualmente',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Considere las imágenes o videos que se utilizarán para crear la esencia de su anuncio. Aproveche las mejoras automáticas para una apariencia visual excepcional y acompañe sus medios con texto claro y persuasivo.'
+            },
+          ]
+        },
+        {
+          titulo: '9.Evaluación Final Antes de la publicación',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'Revise cada configuración minuciosamente. Antes de llevar su anuncio al mundo digital, asegúrese de que todo esté en orden, desde la audiencia hasta la creatividad.'
+            },
+          ]
+        },
+        {
+          titulo: '10. Investiga y ajusta Constantemente',
+          contents: [
+            {
+              subtitulo: '',
+              parrafo: 'La publicación no marca el final; en cambio, marca el inicio de la fase de análisis y ajuste. Según los datos recopilados, evalua el rendimiento utilizando las herramientas de análisis disponibles y realiza ajustes estratégicos.'
+            },
+          ]
+        },
+      ],
+      pieExtra: '¡Estarás listo para conquistar an Instagram Ads Manager y llevar tu estrategia publicitaria al siguiente nivel con estos 10 pasos maestros! Estamos aquí para ayudarte si surge alguna pregunta en tu viaje.',
+      pieExtraNormal: '',
+      contenidoAdicional: [],
+      contenidoExtraAdicional: [],
+      "metadata": {
+        "descripcion": "Breve descripción del contenido del post para SEO",
+        "palabras_clave": ["keyword1", "keyword2", "keyword3"],
+        "autor": "Nombre del autor del post",
+        "fecha_publicacion": "Fecha de publicación del post en formato YYYY-MM-DD",
+        "categoria": "Categoría del post",
+        "etiquetas": ["etiqueta1", "etiqueta2", "etiqueta3"]
+      }
+    },
+    {
+      "titulo": "Estrategias de marketing digital:",
+      "subtitulo": 'Destacando entre la competencia',
+      "slug": "Destacando entre la competencia",
+      "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-6-bg.png)",
+      "contenido": [
+        {
+          titulo: 'Diferénciate y Destaca en el Universo Competitivo de la Tecnología con Nuestra Guía de Marketing Digital',
+          descripcion: 'Sumérgete en el universo competitivo de la tecnología y descubre cómo el marketing digital puede ser tu aliado para destacar y conectarte con tu audiencia. En este artículo, exploraremos estrategias creativas y perspicaces que te ayudarán a conquistar la lealtad del cliente y a asegurar un lugar destacado en el dinámico escenario tecnológico. ¡Acompáñanos y no te pierdas ningún detalle!'
+        },
+        {
+          subtitulo: '¿Por qué las empresas tecnológicas necesitan diferenciarse?',
+          descripcion: 'En un mercado saturado, la diferenciación es crucial para destacar y captar la atención en un mundo tecnológico acelerado. Las empresas tecnológicas deben diferenciarse para mantenerse relevantes y satisfacer las demandas de los consumidores en medio de una competencia feroz y una evolución tecnológica rápida. La percepción del cliente se ve afectada por la diferenciación, que también contribuye a la creación de valor, la fidelización y el reconocimiento de la marca.'
+        },
+      ],
+      contenidoDigital: {
+        tituloDigital: '',
+        subtituloDigital: '',
+        pieDigital: '',
+        extraDigital: ''
+      },
+      contenidoEstrategico: [
+        {
+          imagen: '/assets/img/post-principal-3.png',
+          titulo: 'Integración Estratégica de la IA en tus Campañas',
+          subtitulo: 'La implementación de estrategias de Marketing Potenciado por IA requiere una cuidadosa integración y consideración:',
+          contents: [
+            {
+              titulo: 'Contenido Estratégico:',
+              descripcion: 'La empresa se posiciona como un referente en el sector a través de blogs, videos y podcasts que exploran las últimas tendencias tecnológicas.\n'
+            },
+            {
+              titulo: 'Eventos virtuales y seminarios web: ',
+              descripcion: 'A través de seminarios web y seminarios virtuales, destaca el conocimiento y la experiencia de tu empresa para profundizar en temas relevantes para tu audiencia.\n'
+            },
+            {
+              titulo: 'Optimización SEO: ',
+              descripcion: 'Las estrategias basadas en SEO permiten a las empresas demostrar su diferenciación al aumentar la visibilidad en los resultados de búsqueda.'
+            },
+            {
+              titulo: 'Presencia en las redes sociales: ',
+              descripcion: 'Utiliza sitios como Facebook, Instagram y LinkedIn para llegar an audiencias específicas y aumentar el conocimiento de la marca.'
+            },
+            {
+              titulo: 'Publicidad Paga:',
+              descripcion: ' El primer paso importante para conocer la diferenciación de la marca tecnológica es mostrar anuncios relevantes en los resultados de búsqueda y los sitios web relacionados.'
+            },
+          ],
+        }
+      ],
+      contenidoAdicional: [ ],
+      contenidoPrincipal: [ ],
+      contenidoExtraAdicional: [],
+      piePagina: 'Estos métodos, junto con otros recursos, te ayudarán a demostrar por qué tu empresa es diferente en el mercado tecnológico. Como agencia de marketing digital, Paxzu se destaca por guiar a sus clientes hacia el éxito, asegurándose de que destaquen en un mercado tan competitivo. Paxzu es un aliado confiable para aumentar la visibilidad de su empresa en el sector tecnológico. ¡Fortalezca su presencia en el mercado confiando en nuestras habilidades!',
       "metadata": {
         "descripcion": "Breve descripción del contenido del post para SEO",
         "palabras_clave": ["keyword1", "keyword2", "keyword3"],
