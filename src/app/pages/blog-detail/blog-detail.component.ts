@@ -24,7 +24,7 @@ export class BlogDetailComponent {
     {
       "titulo": "Explorando el mañana:",
       "subtitulo": 'Marketing potenciado por IA',
-      "slug": "Explorando el mañana",
+      "slug": "Explorando-el-mañana",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-1-bg.png)",
       "contenido": [
         {
@@ -122,7 +122,7 @@ export class BlogDetailComponent {
     {
       "titulo": "Delicias creativas",
       "subtitulo": '10 Estrategias de marketing para restaurantes',
-      "slug": "10 Estrategias de marketing para restaurantes",
+      "slug": "10-Estrategias-de-marketing-para-restaurantes",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-2-bg.png)",
       "contenido": [
         {
@@ -285,7 +285,7 @@ export class BlogDetailComponent {
     {
       "titulo": "Revitalizando contenidos:",
       "subtitulo": 'Potenciando el contenido con IA',
-      "slug": "Potenciando el contenido con IA",
+      "slug": "Potenciando-el-contenido-con-IA",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-3-bg.png)",
       "contenido": [
         {
@@ -371,7 +371,7 @@ export class BlogDetailComponent {
     {
       "titulo": "Descrube Nuevos Horizontes:",
       "subtitulo": 'Estrategias Innovadoras para Impulsar tu Mensaje',
-      "slug": "Estrategias Innovadoras para Impulsar tu Mensaje",
+      "slug": "Estrategias-Innovadoras-para-Impulsar-tu-Mensaje",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-4-bg.png)",
       "contenido": [
         {
@@ -503,7 +503,7 @@ export class BlogDetailComponent {
     {
       "titulo": "Estrategias para instagram ads:",
       "subtitulo": 'Dominando el arte del anuncio digital',
-      "slug": "Dominando el arte del anuncio digital",
+      "slug": "Dominando-el-arte-del-anuncio-digital",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-5-bg.png)",
       "contenido": [
         {
@@ -634,7 +634,7 @@ export class BlogDetailComponent {
     {
       "titulo": "Estrategias de marketing digital:",
       "subtitulo": 'Destacando entre la competencia',
-      "slug": "Destacando entre la competencia",
+      "slug": "Destacando-entre-la-competencia",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-6-bg.png)",
       "contenido": [
         {
