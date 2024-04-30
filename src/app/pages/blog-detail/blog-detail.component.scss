@@ -363,6 +363,60 @@
     line-height: 2rem;
   }
 
+  &__cards__grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  &__contenido {
+    background-color: #F3F3F3;
+    padding: 1.5rem 6rem;
+  }
+
+  &__titles {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__subtitles {
+    font-weight: 700;
+  }
+
+  &__paragraph__card {
+    margin: 0;
+
+  }
+
+  &__subtitle__card {
+    display: block;
+    color: #000000;
+    font-weight: 700;
+  }
+
+  &__link__card {
+    display: block;
+    font-size: 1.4rem;
+    color: #1D2025;
+    text-transform: uppercase;
+    padding-top: 1.5rem;
+    font-weight: 300;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      top: 50%;
+      left: 11rem;
+      background-image: url("/assets/svg/arrow_right_short.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
 
 }
 
