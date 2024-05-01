@@ -197,41 +197,21 @@
 
         <div class="blog-detail__cards__grid">
 
-          <div class="blog-detail__card">
-            <div class="blog-detail__imagen">
-              <img src="/assets/img/post-imagen-1.png" alt="">
-            </div>
-            <div class="blog-detail__contenido">
-              <p class="blog-detail__paragraph__card"> <span class="blog-detail__subtitle__card">Explorando el mañana: </span>
-                Marketing potenciado por IA
-              </p>
-              <a class="blog-detail__link__card" (click)="navigateTo('/blog/Explorando-el-mañana')">Conocer más</a>
-            </div>
-          </div>
-
-          <div class="blog-detail__card">
-            <div class="blog-detail__imagen">
-              <img src="/assets/img/post-imagen-2.png" alt="">
-            </div>
-            <div class="blog-detail__contenido">
-              <p class="blog-detail__paragraph__card"> <span class="blog-detail__subtitle__card">Nuevos Horizontes </span>
-                Estrategias Innovadoras para Impulsar tu Mensaje
-              </p>
-              <a class="blog-detail__link__card" (click)="navigateTo('/blog/Estrategias-Innovadoras-para-Impulsar-tu-Mensaje')">Conocer más</a>
-            </div>
-          </div>
-
-          <div class="blog-detail__card">
-            <div class="blog-detail__imagen">
-              <img src="/assets/img/post-imagen-3.png" alt="">
-            </div>
-            <div class="blog-detail__contenido">
-              <p class="blog-detail__paragraph__card"> <span class="blog-detail__subtitle__card">Revitalizando contenidos: </span>
-                Potenciando el contenido con IA
-              </p>
-              <a class="blog-detail__link__card" (click)="navigateTo('/blog/Potenciando-el-contenido-con-IA')">Conocer más</a>
-            </div>
-          </div>
+          <ng-container *ngFor="let post of postsNav">
+            <ng-container *ngIf="post.show">
+              <div class="blog-detail__card">
+                <div class="blog-detail__imagen">
+                  <img src="{{post.image}}" alt="">
+                </div>
+                <div class="blog-detail__contenido" (click)="navigateTo(post.link)">
+                  <p class="blog-detail__paragraph__card"> <span class="blog-detail__subtitle__card">{{post.titulo}} </span>
+                    {{post.subtitulo}}
+                  </p>
+                  <a class="blog-detail__link__card">Conocer más</a>
+                </div>
+              </div>
+            </ng-container>
+          </ng-container>
 
           <div class="blog-detail__card">
             <div class="blog-detail__imagen">

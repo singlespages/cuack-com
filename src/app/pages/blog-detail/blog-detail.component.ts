@@ -20,8 +20,9 @@ import {FooterComponent} from "../footer/footer.component";
 })
 export class BlogDetailComponent {
 
-  public posts: any  =  [
+  public postsFiltered: any  =  [
     {
+      show: false,
       "titulo": "Explorando el mañana:",
       "subtitulo": 'Marketing potenciado por IA',
       "slug": "Explorando-el-mañana",
@@ -120,6 +121,7 @@ export class BlogDetailComponent {
       }
     },
     {
+      show: false,
       "titulo": "Delicias creativas",
       "subtitulo": '10 Estrategias de marketing para restaurantes',
       "slug": "10-Estrategias-de-marketing-para-restaurantes",
@@ -283,6 +285,7 @@ export class BlogDetailComponent {
       }
     },
     {
+      show: false,
       "titulo": "Revitalizando contenidos:",
       "subtitulo": 'Potenciando el contenido con IA',
       "slug": "Potenciando-el-contenido-con-IA",
@@ -369,6 +372,7 @@ export class BlogDetailComponent {
       }
     },
     {
+      show: false,
       "titulo": "Descrube Nuevos Horizontes:",
       "subtitulo": 'Estrategias Innovadoras para Impulsar tu Mensaje',
       "slug": "Estrategias-Innovadoras-para-Impulsar-tu-Mensaje",
@@ -501,6 +505,7 @@ export class BlogDetailComponent {
       }
     },
     {
+      show: false,
       "titulo": "Estrategias para instagram ads:",
       "subtitulo": 'Dominando el arte del anuncio digital',
       "slug": "Dominando-el-arte-del-anuncio-digital",
@@ -632,6 +637,7 @@ export class BlogDetailComponent {
       }
     },
     {
+      show: false,
       "titulo": "Estrategias de marketing digital:",
       "subtitulo": 'Destacando entre la competencia',
       "slug": "Destacando-entre-la-competencia",
@@ -694,8 +700,44 @@ export class BlogDetailComponent {
         "etiquetas": ["etiqueta1", "etiqueta2", "etiqueta3"]
       }
     },
+  ];
 
+  public postsNav: any = [
+    {
+      titulo: 'Explorando el mañana:',
+      slug: 'Explorando-el-mañana',
+      subtitulo: 'Marketing potenciado por IA',
+      image: '/assets/img/post-imagen-1.png',
+      link: '/blog/Explorando-el-mañana',
+      show: true
+    },
+    {
+      titulo: 'Nuevos Horizontes:',
+      slug: 'Estrategias-Innovadoras-para-Impulsar-tu-Mensaje',
+      subtitulo: ' Estrategias Innovadoras para Impulsar tu Mensaje',
+      image: '/assets/img/post-imagen-5.png',
+      link: '/blog/Estrategias-Innovadoras-para-Impulsar-tu-Mensaje',
+      show: true
+    },
+    {
+      titulo: 'Delicias creativas: ',
+      slug: '10-Estrategias-de-marketing-para-restaurantes',
+      subtitulo: ' 10 Estrategias de marketing para restaurantes',
+      image: '/assets/img/post-imagen-2.png',
+      link: '/blog/10-Estrategias-de-marketing-para-restaurantes',
+      show: true
+    },
+    {
+      titulo: 'Revitalizando contenidos: ',
+      slug: 'Potenciando-el-contenido-con-IA',
+      subtitulo: ' Potenciando el contenido con IA',
+      image: '/assets/img/post-imagen-3.png',
+      link: '/blog/Potenciando-el-contenido-con-IA',
+      show: true
+    },
   ]
+
+  public posts: any = [{}];
 
 
   isMenuOpen: boolean = false;
@@ -706,9 +748,9 @@ export class BlogDetailComponent {
     this.screenWidth = window.innerWidth;
     this.route.paramMap.subscribe(params => {
       const id = params.get('id');
-     const post = this.posts.filter((post: any) => {
+      const posted = [...this.postsFiltered];
+       this.posts = posted.filter((post: any) => {
         if (post.slug == id) {
-          //console.log(post)
           return post
         }
       }).reduce((prev: any, curr: any) => {
@@ -716,8 +758,14 @@ export class BlogDetailComponent {
        return prev;
      }, {});
 
-     this.posts = post;
-      console.log(this.posts)
+      this.postsNav.map((post: any) => {
+        if (post.slug == this.posts.slug) {
+          post.show = this.posts.show;
+        }else {
+          post.show = true;
+        }
+        return post;
+      })
 
     })
   }
