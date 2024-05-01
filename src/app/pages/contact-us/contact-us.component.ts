@@ -4,18 +4,20 @@ import {ContactComponent} from "../contact/contact.component";
 import {FooterComponent} from "../footer/footer.component";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {NgIf} from "@angular/common";
+import {RecaptchaModule} from "ng-recaptcha";
 
 @Component({
   selector: 'app-contact-us',
   standalone: true,
-  imports: [
-    RouterLink,
-    ContactComponent,
-    FooterComponent,
-    RouterLinkActive,
-    NavMobileComponent,
-    NgIf
-  ],
+    imports: [
+        RouterLink,
+        ContactComponent,
+        FooterComponent,
+        RouterLinkActive,
+        NavMobileComponent,
+        NgIf,
+        RecaptchaModule
+    ],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss'
 })
@@ -37,5 +39,10 @@ export class ContactUsComponent {
     event.preventDefault();
     this.isMenuOpen = !this.isMenuOpen;
   }
+
+  resolved(captchaResponse: any) {
+    console.log(`Resolved captcha with response: ${captchaResponse}`);
+  }
+
 
 }

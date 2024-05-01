@@ -4,18 +4,20 @@ import {SlickCarouselModule} from "ngx-slick-carousel";
 import {NgIf} from "@angular/common";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
+import {RecaptchaModule} from "ng-recaptcha";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-    imports: [
-        RouterLinkActive,
-        RouterLink,
-        SlickCarouselModule,
-        NgIf,
-        NavMobileComponent,
-        WsButtonComponent
-    ],
+  imports: [
+    RouterLinkActive,
+    RouterLink,
+    SlickCarouselModule,
+    NgIf,
+    NavMobileComponent,
+    WsButtonComponent,
+    RecaptchaModule
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -85,6 +87,10 @@ export class HomeComponent implements AfterViewInit{
 
   toggleMenuMobile() {
     this.menuOpen = !this.menuOpen;
+  }
+
+  resolved(captchaResponse: any) {
+    console.log(`Resolved captcha with response: ${captchaResponse}`);
   }
 
 

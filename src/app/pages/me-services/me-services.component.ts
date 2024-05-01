@@ -4,18 +4,20 @@ import {SlickCarouselModule} from "ngx-slick-carousel";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {NgIf} from "@angular/common";
 import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
+import {RecaptchaModule} from "ng-recaptcha";
 
 @Component({
   selector: 'app-me-services',
   standalone: true,
-    imports: [
-        RouterLink,
-        RouterLinkActive,
-        SlickCarouselModule,
-        NavMobileComponent,
-        NgIf,
-        WsButtonComponent
-    ],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    SlickCarouselModule,
+    NavMobileComponent,
+    NgIf,
+    WsButtonComponent,
+    RecaptchaModule
+  ],
   templateUrl: './me-services.component.html',
   styleUrl: './me-services.component.scss'
 })
@@ -51,5 +53,10 @@ export class MeServicesComponent {
     event.preventDefault();
     this.isMenuOpen = !this.isMenuOpen;
   }
+
+  resolved(captchaResponse: any) {
+    console.log(`Resolved captcha with response: ${captchaResponse}`);
+  }
+
 
 }
