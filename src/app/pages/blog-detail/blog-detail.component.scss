@@ -86,7 +86,7 @@
   &__heading {
     color: #FFF;
     text-align: center;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 800;
     line-height: 85px; /* 106.25% */
     text-transform: uppercase;
@@ -98,6 +98,18 @@
       line-height: 3rem;
       text-align: center;
       padding-top: 8rem;
+    }
+  }
+
+  &__fecha {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+
+    &::before {
+      content: url("/assets/img/calendario-block.png");
+      margin-right: 1.5rem;
     }
   }
 

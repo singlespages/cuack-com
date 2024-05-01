@@ -23,6 +23,7 @@ export class BlogDetailComponent {
   public postsFiltered: any  =  [
     {
       show: false,
+      fecha: '25 febrero 2024',
       "titulo": "Explorando el mañana:",
       "subtitulo": 'Marketing potenciado por IA',
       "slug": "explorando-el-mañana",
@@ -122,6 +123,7 @@ export class BlogDetailComponent {
     },
     {
       show: false,
+      fecha: '26 febrero 2024',
       "titulo": "Delicias creativas",
       "subtitulo": '10 Estrategias de marketing para restaurantes',
       "slug": "10-estrategias-de-marketing-para-restaurantes",
@@ -286,6 +288,7 @@ export class BlogDetailComponent {
     },
     {
       show: false,
+      fecha: '26 febrero 2024',
       "titulo": "Revitalizando contenidos:",
       "subtitulo": 'Potenciando el contenido con IA',
       "slug": "potenciando-el-contenido-con-ia",
@@ -373,6 +376,7 @@ export class BlogDetailComponent {
     },
     {
       show: false,
+      fecha: '26 febrero 2024',
       "titulo": "Descrube Nuevos Horizontes:",
       "subtitulo": 'Estrategias Innovadoras para Impulsar tu Mensaje',
       "slug": "estrategias-innovadoras-para-impulsar-tu-mensaje",
@@ -506,6 +510,7 @@ export class BlogDetailComponent {
     },
     {
       show: false,
+      fecha: '27 febrero 2024',
       "titulo": "Estrategias para instagram ads:",
       "subtitulo": 'Dominando el arte del anuncio digital',
       "slug": "dominando-el-arte-del-anuncio-digital",
@@ -638,6 +643,7 @@ export class BlogDetailComponent {
     },
     {
       show: false,
+      fecha: '27 febrero 2024',
       "titulo": "Estrategias de marketing digital:",
       "subtitulo": 'Destacando entre la competencia',
       "slug": "destacando-entre-la-competencia",
