@@ -2,16 +2,18 @@ import {Component, HostListener} from '@angular/core';
 import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {NgIf} from "@angular/common";
+import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [
-    RouterLink,
-    RouterLinkActive,
-    NavMobileComponent,
-    NgIf
-  ],
+    imports: [
+        RouterLink,
+        RouterLinkActive,
+        NavMobileComponent,
+        NgIf,
+        WsButtonComponent
+    ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })

@@ -6,6 +6,7 @@ import {NgIf} from "@angular/common";
 import {ModalService} from "../../services/modal.service";
 import {ModalComponent} from "../../components/modal/modal.component";
 import {Observable} from "rxjs";
+import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
 
 @Component({
   selector: 'app-briefcase',
@@ -16,7 +17,8 @@ import {Observable} from "rxjs";
     RouterLinkActive,
     NavMobileComponent,
     NgIf,
-    ModalComponent
+    ModalComponent,
+    WsButtonComponent
   ],
   templateUrl: './briefcase.component.html',
   styleUrl: './briefcase.component.scss'

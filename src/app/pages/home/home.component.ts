@@ -3,17 +3,19 @@ import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SlickCarouselModule} from "ngx-slick-carousel";
 import {NgIf} from "@angular/common";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
+import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    RouterLinkActive,
-    RouterLink,
-    SlickCarouselModule,
-    NgIf,
-    NavMobileComponent
-  ],
+    imports: [
+        RouterLinkActive,
+        RouterLink,
+        SlickCarouselModule,
+        NgIf,
+        NavMobileComponent,
+        WsButtonComponent
+    ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

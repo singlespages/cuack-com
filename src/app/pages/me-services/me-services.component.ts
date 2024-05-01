@@ -3,17 +3,19 @@ import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SlickCarouselModule} from "ngx-slick-carousel";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {NgIf} from "@angular/common";
+import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
 
 @Component({
   selector: 'app-me-services',
   standalone: true,
-  imports: [
-    RouterLink,
-    RouterLinkActive,
-    SlickCarouselModule,
-    NavMobileComponent,
-    NgIf
-  ],
+    imports: [
+        RouterLink,
+        RouterLinkActive,
+        SlickCarouselModule,
+        NavMobileComponent,
+        NgIf,
+        WsButtonComponent
+    ],
   templateUrl: './me-services.component.html',
   styleUrl: './me-services.component.scss'
 })

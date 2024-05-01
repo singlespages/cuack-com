@@ -9,22 +9,24 @@ import {
 } from "../subpages/subpage-strategic-communication/subpage-strategic-communication.component";
 import {SlickCarouselModule} from "ngx-slick-carousel";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
+import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
 
 @Component({
   selector: 'app-digital-design',
   standalone: true,
-  imports: [
-    RouterLink,
-    NgSwitchCase,
-    CustomPageDesignComponent,
-    NgIf,
-    SubpageDesignWebComponent,
-    SubPageDesignMarkComponent,
-    SubpageStrategicCommunicationComponent,
-    SlickCarouselModule,
-    RouterLinkActive,
-    NavMobileComponent
-  ],
+    imports: [
+        RouterLink,
+        NgSwitchCase,
+        CustomPageDesignComponent,
+        NgIf,
+        SubpageDesignWebComponent,
+        SubPageDesignMarkComponent,
+        SubpageStrategicCommunicationComponent,
+        SlickCarouselModule,
+        RouterLinkActive,
+        NavMobileComponent,
+        WsButtonComponent
+    ],
   templateUrl: './digital-design.component.html',
   styleUrl: './digital-design.component.scss'
 })
