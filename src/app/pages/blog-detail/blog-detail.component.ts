@@ -25,7 +25,7 @@ export class BlogDetailComponent {
       show: false,
       "titulo": "Explorando el mañana:",
       "subtitulo": 'Marketing potenciado por IA',
-      "slug": "Explorando-el-mañana",
+      "slug": "explorando-el-mañana",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-1-bg.png)",
       "contenido": [
         {
@@ -124,7 +124,7 @@ export class BlogDetailComponent {
       show: false,
       "titulo": "Delicias creativas",
       "subtitulo": '10 Estrategias de marketing para restaurantes',
-      "slug": "10-Estrategias-de-marketing-para-restaurantes",
+      "slug": "10-estrategias-de-marketing-para-restaurantes",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-2-bg.png)",
       "contenido": [
         {
@@ -288,7 +288,7 @@ export class BlogDetailComponent {
       show: false,
       "titulo": "Revitalizando contenidos:",
       "subtitulo": 'Potenciando el contenido con IA',
-      "slug": "Potenciando-el-contenido-con-IA",
+      "slug": "potenciando-el-contenido-con-ia",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-3-bg.png)",
       "contenido": [
         {
@@ -375,7 +375,7 @@ export class BlogDetailComponent {
       show: false,
       "titulo": "Descrube Nuevos Horizontes:",
       "subtitulo": 'Estrategias Innovadoras para Impulsar tu Mensaje',
-      "slug": "Estrategias-Innovadoras-para-Impulsar-tu-Mensaje",
+      "slug": "estrategias-innovadoras-para-impulsar-tu-mensaje",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-4-bg.png)",
       "contenido": [
         {
@@ -508,7 +508,7 @@ export class BlogDetailComponent {
       show: false,
       "titulo": "Estrategias para instagram ads:",
       "subtitulo": 'Dominando el arte del anuncio digital',
-      "slug": "Dominando-el-arte-del-anuncio-digital",
+      "slug": "dominando-el-arte-del-anuncio-digital",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-5-bg.png)",
       "contenido": [
         {
@@ -640,7 +640,7 @@ export class BlogDetailComponent {
       show: false,
       "titulo": "Estrategias de marketing digital:",
       "subtitulo": 'Destacando entre la competencia',
-      "slug": "Destacando-entre-la-competencia",
+      "slug": "destacando-entre-la-competencia",
       "foto": "linear-gradient(277deg, rgba(26, 26, 26, 0.70) 46.33%, rgba(26, 26, 26, 0.00) 109.17%),url(/assets/img/post-6-bg.png)",
       "contenido": [
         {
@@ -705,34 +705,34 @@ export class BlogDetailComponent {
   public postsNav: any = [
     {
       titulo: 'Explorando el mañana:',
-      slug: 'Explorando-el-mañana',
+      slug: 'explorando-el-mañana',
       subtitulo: 'Marketing potenciado por IA',
       image: '/assets/img/post-imagen-1.png',
-      link: '/blog/Explorando-el-mañana',
+      link: '/blog/explorando-el-mañana',
       show: true
     },
     {
       titulo: 'Nuevos Horizontes:',
-      slug: 'Estrategias-Innovadoras-para-Impulsar-tu-Mensaje',
+      slug: 'estrategias-innovadoras-para-impulsar-tu-mensaje',
       subtitulo: ' Estrategias Innovadoras para Impulsar tu Mensaje',
       image: '/assets/img/post-imagen-5.png',
-      link: '/blog/Estrategias-Innovadoras-para-Impulsar-tu-Mensaje',
+      link: '/blog/estrategias-innovadoras-para-impulsar-tu-mensaje',
       show: true
     },
     {
       titulo: 'Delicias creativas: ',
-      slug: '10-Estrategias-de-marketing-para-restaurantes',
+      slug: '10-estrategias-de-marketing-para-restaurantes',
       subtitulo: ' 10 Estrategias de marketing para restaurantes',
       image: '/assets/img/post-imagen-2.png',
-      link: '/blog/10-Estrategias-de-marketing-para-restaurantes',
+      link: '/blog/10-estrategias-de-marketing-para-restaurantes',
       show: true
     },
     {
       titulo: 'Revitalizando contenidos: ',
-      slug: 'Potenciando-el-contenido-con-IA',
+      slug: 'potenciando-el-contenido-con-ia',
       subtitulo: ' Potenciando el contenido con IA',
       image: '/assets/img/post-imagen-3.png',
-      link: '/blog/Potenciando-el-contenido-con-IA',
+      link: '/blog/potenciando-el-contenido-con-ia',
       show: true
     },
   ]
