@@ -16,7 +16,8 @@ export const routes: Routes = [
   },
   {
     path: 'quienes-somos',
-    component: AboutComponent
+    component: AboutComponent,
+    data: {title: 'Conoce a Cuackcolombia: Nuestra Historia y Valores', description: 'En Cuackcolombia, somos más que una agencia de publicidad. Descubre nuestra historia, nuestra pasión inquebrantable por el diseño gráfico y cómo estamos redefiniendo el estándar en la industria publicitaria en Colombia.'}
   },
   {
     path: 'nuestros-servicios',
