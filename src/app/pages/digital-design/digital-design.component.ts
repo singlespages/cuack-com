@@ -10,6 +10,7 @@ import {
 import {SlickCarouselModule} from "ngx-slick-carousel";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
+import {Meta} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-digital-design',
@@ -33,12 +34,13 @@ import {WsButtonComponent} from "../../components/ws-button/ws-button.component"
 export class DigitalDesignComponent {
   isMenuOpen: boolean = false;
   screenWidth!: number;
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private meta: Meta) {
     this.screenWidth = window.innerWidth;
     this.route.paramMap.subscribe((params) => {
       this.activeTab = Number(params.get('id'));
       this.isMenuOpen = false;
     })
+    this.meta.addTag({title: 'Diseño Digital: Servicios Creativos y Soluciones Innovadoras - Cuackcolombia' ,name: 'description', content: 'Descubre los servicios de diseño digital de Cuackcolombia. Creamos experiencias visuales impactantes y soluciones innovadoras para destacar tu marca en el entorno digital.'})
   }
 
   toggleMenu(event: Event): void {
