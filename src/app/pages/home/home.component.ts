@@ -5,6 +5,7 @@ import {NgIf} from "@angular/common";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
 import {RecaptchaModule} from "ng-recaptcha";
+import {Meta} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-home',
@@ -43,8 +44,9 @@ export class HomeComponent implements AfterViewInit{
 
   screenWidth!: number;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private meta: Meta) {
     this.screenWidth = window.innerWidth;
+    this.meta.addTag({title: 'Cuackcolombia - Agencia de Publicidad y Diseño Gráfico en Colombia' ,name: 'description', content: 'Cuackcolombia, una marca colombiana apasionada por la publicidad y el diseño gráfico. Superamos las expectativas de las empresas, sin importar su tamaño o trayectoria. Descubre cómo podemos ayudarte a destacar.'})
   }
 
   @HostListener('window:resize', ['$event'])

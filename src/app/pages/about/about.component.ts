@@ -3,6 +3,7 @@ import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {NgIf} from "@angular/common";
 import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
+import {Meta} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-about',
@@ -21,8 +22,9 @@ export class AboutComponent {
   isMenuOpen: boolean = false;
   screenWidth!: number;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private meta: Meta) {
     this.screenWidth = window.innerWidth;
+    this.meta.addTag({title: 'Conoce a Cuackcolombia: Nuestra Historia y Valores' ,name: 'description', content: 'En Cuackcolombia, somos más que una agencia de publicidad. Descubre nuestra historia, nuestra pasión inquebrantable por el diseño gráfico y cómo estamos redefiniendo el estándar en la industria publicitaria en Colombia.'})
   }
 
   @HostListener('window:resize', ['$event'])

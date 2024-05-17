@@ -5,6 +5,7 @@ import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {NgIf} from "@angular/common";
 import {WsButtonComponent} from "../../components/ws-button/ws-button.component";
 import {RecaptchaModule} from "ng-recaptcha";
+import {Meta} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-me-services',
@@ -32,8 +33,9 @@ export class MeServicesComponent {
 
   screenWidth!: number;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private meta: Meta) {
     this.screenWidth = window.innerWidth;
+    this.meta.addTag({title: 'Nuestros Servicios: Publicidad y Diseño Gráfico de Vanguardia' ,name: 'description', content: 'Explora los servicios de vanguardia que ofrecemos en Cuackcolombia. Desde estrategias publicitarias innovadoras hasta diseño gráfico creativo, estamos aquí para impulsar tu marca hacia el éxito.'})
   }
 
   @HostListener('window:resize', ['$event'])
